@@ -47,20 +47,16 @@ $(".home_video_box video").mouseenter(function() {
 
 	
  
-  if (this.paused) {
+  
     this.play();
-  } else {
-    this.pause();
-  }
+ 
 });
 
 $(".home_video_box video").mouseleave(function() {
 
-  if (this.paused) {
+ 
     this.play();
-  } else {
-    this.pause();
-  }
+ 
 });
 
 
