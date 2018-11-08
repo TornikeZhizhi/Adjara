@@ -31,6 +31,10 @@
 	bottom: 5%;
 	z-index: 1000;
 	display: none;
+	user-select: none;
+	 animation: scrollAnime 2s;
+	 animation-direction: alternate-reverse;
+	 animation-iteration-count: infinite;
 }
 
 .main_tittle_box {
@@ -501,6 +505,7 @@
 	 z-index: 10;
 	 width: 360px;
 
+
 	  form {
 	  	border-radius: 50px;
 	  	display: flex;
@@ -600,7 +605,7 @@
 	 animation: scrollAnime 2s;
 	 animation-direction: alternate-reverse;
 	 animation-iteration-count: infinite;
-	 z-index: 10;
+	 user-select: none;
 
 	 &:after{
 	 	position:absolute;
@@ -1182,6 +1187,7 @@
 			  height: 420px;
 			  overflow: hidden;
 			  position: relative;
+			  user-select: none;
 
 			    .video_decor {
 			    	position: absolute;
@@ -1300,6 +1306,23 @@
 					overflow: hidden;
 					width: 325px;
 					margin-top: 10px;
+					position: relative;
+
+
+					.ln_box {
+
+						position: absolute;
+					    width: 69%;
+					    height: 1px;
+					    top: 73%;
+					    background-color: #19CBC5;
+					    left: 14px;
+					    z-index: 100;
+					    opacity: 0;
+					    transition: all .4s;
+
+						
+					}
 
 					 input {
 					 	background-color: rgba(0, 0, 0, 0.5);
@@ -1308,6 +1331,14 @@
 					    padding: 5px 15px;
 					    font-size: 13px;
 					    font-family: 'Conv_bpg_nino_medium_caps';
+
+					    &:focus + .ln_box {
+					    	opacity:1;
+					    }
+
+
+
+
 					 }
 
 					 button {
@@ -1516,4 +1547,16 @@
 			margin-right: 10px;
 		}
 	}
+}
+
+
+
+
+/*Responsive*/
+
+
+
+@media only screen and (min-width: 1950px) {
+
+
 }

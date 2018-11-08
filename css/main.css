@@ -107,7 +107,11 @@ a:hover {
   right: 5%;
   bottom: 5%;
   z-index: 1000;
-  display: none; }
+  display: none;
+  user-select: none;
+  animation: scrollAnime 2s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite; }
 
 .main_tittle_box {
   position: absolute;
@@ -491,7 +495,7 @@ a:hover {
   animation: scrollAnime 2s;
   animation-direction: alternate-reverse;
   animation-iteration-count: infinite;
-  z-index: 10; }
+  user-select: none; }
   .scrollspy_button:after {
     position: absolute;
     content: "";
@@ -848,7 +852,8 @@ a:hover {
       width: 32.5%;
       height: 420px;
       overflow: hidden;
-      position: relative; }
+      position: relative;
+      user-select: none; }
       .home_video_fluid .home_video_container .home_video_box .video_decor {
         position: absolute;
         width: 100%;
@@ -930,7 +935,18 @@ a:hover {
       border-radius: 15px;
       overflow: hidden;
       width: 325px;
-      margin-top: 10px; }
+      margin-top: 10px;
+      position: relative; }
+      .footer_fluid .footer_top .footer_top_content form .ln_box {
+        position: absolute;
+        width: 69%;
+        height: 1px;
+        top: 73%;
+        background-color: #19CBC5;
+        left: 14px;
+        z-index: 100;
+        opacity: 0;
+        transition: all .4s; }
       .footer_fluid .footer_top .footer_top_content form input {
         background-color: rgba(0, 0, 0, 0.5);
         width: calc(100% - 80px);
@@ -938,6 +954,8 @@ a:hover {
         padding: 5px 15px;
         font-size: 13px;
         font-family: 'Conv_bpg_nino_medium_caps'; }
+        .footer_fluid .footer_top .footer_top_content form input:focus + .ln_box {
+          opacity: 1; }
       .footer_fluid .footer_top .footer_top_content form button {
         color: #666666;
         font-size: 18px;
@@ -1061,5 +1079,7 @@ a:hover {
   .footer_fa_icons a:not(:last-child) {
     display: inline-block;
     margin-right: 10px; }
+
+/*Responsive*/
 
 /*# sourceMappingURL=main.css.map */

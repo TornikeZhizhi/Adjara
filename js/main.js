@@ -43,21 +43,19 @@ $.each(vids, function(){
 }); 
 
 
-$(".home_video_box video").mouseenter(function() {
+$(document).ready(function(){
 
-	
- 
-  
-    this.play();
- 
-});
+  $(".home_video_box video").mouseenter(function() {
+      this.play();
+  });
 
-$(".home_video_box video").mouseleave(function() {
+  $(".home_video_box video").mouseleave(function() {
+      this.pause();
+  });
 
- 
-    this.play();
- 
-});
+})
+
+
 
 
 $(".home_video_box").mouseenter(function() {
@@ -116,7 +114,6 @@ $(window).on("scroll",function(){
 	}
 	
 
-console.log(sm)
 
 })
 

@@ -385,7 +385,8 @@
     <div class="modal-content">
    
       <div class="modal-body">
-       		<video  controls autoplay>
+       		<video  muted="muted" autoplay="true" webkit-playsinline="true"
+    playsinline="true">
 			  <source src="video/Trees.mp4" type="video/mp4">
 			</video>
       </div>
@@ -403,7 +404,7 @@
 			<div class="video_decor">
 				<img src="images/video_icon.png">
 			</div>	
-			<video  controls data-toggle="modal" data-target="#exampleModal">
+			<video  controls data-toggle="modal" data-target="#exampleModal" muted="muted">
 			  <source src="video/Trees.mp4" type="video/mp4">
 			</video>
 		</div>
@@ -413,7 +414,7 @@
 			<div class="video_decor">
 				<img src="images/video_icon.png">
 			</div>	
-			<video  controls data-toggle="modal" data-target="#exampleModal">
+			<video  controls data-toggle="modal" data-target="#exampleModal" muted="muted">
 			  <source src="video/Trees.mp4" type="video/mp4">
 			</video>
 		</div>
@@ -423,7 +424,7 @@
 			<div class="video_decor">
 				<img src="images/video_icon.png">
 			</div>	
-			<video  controls data-toggle="modal" data-target="#exampleModal">
+			<video  controls data-toggle="modal" data-target="#exampleModal" muted="muted">
 			  <source src="video/Trees.mp4" type="video/mp4">
 			</video>
 		</div>
@@ -443,9 +444,6 @@
 
 
 
-<!-- // Footer -->
-
-
 <div class="footer_fluid">
 
 	<!-- //footer  top-->
@@ -457,7 +455,9 @@
 				<h3>საკონტაქტო ფორმა</h3>
 			</div>
 			<form>
+				
 				<input type="text" name="">
+				<label class="ln_box"></label>
 				<button>გაგზავნა</button>
 			</form>
 		</div>
