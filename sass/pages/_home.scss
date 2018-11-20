@@ -191,6 +191,8 @@
 
 	  .top_left_content {
 	  	display: flex;
+
+
 	  }
 
 	  .welcome_tittle {
@@ -642,12 +644,12 @@
 
 	0% {
 		
-		transform: translateY(0);
+		transform: translateX(-50%) translateY(0);
 	}
 
 	100% {
 		
-		transform: translateY(10px);
+		transform: translateX(-50%) translateY(10px);
 	}
 }
 
@@ -1375,6 +1377,7 @@
 					 	padding: 3px 11px;
 					 	outline: none;
 					 	border: none;
+					 	cursor: pointer;
 					 }
 				}
 
@@ -1575,6 +1578,16 @@
 	}
 }
 
+.main_logo {
+
+	 a {
+
+	 	 img {
+	 	 	width: 98px;
+	 	 }
+	 }
+}
+
 
 
 
@@ -1648,6 +1661,8 @@
 @media only screen and (max-width: 1280px) {
 
 .mountain_box {
+
+
 
     height: 60%;
    
