@@ -739,14 +739,16 @@
 .m_culture_fluid {
 	width: 100%;
 	display: flex;
+	justify-content: space-between;
 
 
 	  &>div {
-	  	width: 50%;
+	  	width: 49.8%;
 	  	height: 100vh;
 
 	  	 &:hover  a:before{
               	
+
               	width:50%;
 
 		    }
@@ -823,14 +825,45 @@
 .gif_fluid {
 
 	 width: 100%;
-	 background: url("../images/road.png"),linear-gradient(rgb(25,203,197),rgb(25,203,197));
+	 background: url("../images/trip_img.png"),linear-gradient(rgb(25,203,197),rgb(25,203,197));
 	 background-position: center center;
 	 background-repeat: no-repeat;
 	 background-size: contain;
-	 height: 300px;
+	 height: 360px;
 	 position: relative;
 	 overflow: hidden;
+	 background-position:100% 75%;
+			
 
+			.gif_tittle {
+				width: 100%;
+				text-align: center;
+				margin-top: 30px;
+
+				  h2 {
+				  	color: #fff;
+				  	position: relative;
+				  	font-family: 'Conv_bebas-neue-regular';
+  					font-size: 40px;
+  					display: inline-block;
+						
+						&:after{
+
+						    position: absolute;
+						    content: "";
+						    width: 60%;
+						    height: 4px;
+						    background-color: #fff;
+						    left: 50%;
+						    transform: translateX(-50%);
+						    bottom: -5px;
+						    transition: .4s;
+						    z-index: 100;
+
+						}
+
+				  }
+			}
 
 
 
@@ -842,6 +875,10 @@
 	 		font-size: 30px;
 	 	}
 
+	 	img {
+	 		cursor:pointer;
+	 	}
+
 	 	
 	 }	
 
@@ -850,35 +887,45 @@
 
 
 .gif_container .gif_box:nth-child(1){
-	      position: absolute;
-    top: 22%;
-    left: 23%;
+	position: absolute;
+    top: 42%;
+    left: 17%;
+    height: 97px;
+    width: 168px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .gif_container .gif_box:nth-child(2){
 	
 	h3 {
-		 padding-bottom: 20px;
+	 padding-bottom: 20px;
 	}
 	position: absolute;
-	    top: 30%;
+	top: 47%;
     left: 38%;
 
 }
 
 
 .gif_container .gif_box:nth-child(3){
-	   position: absolute;
-    top: 20%;
-    left: 55%;
+    position: absolute;
+    top: 38%;
+    left: 53%;
 }
 
 .gif_container .gif_box:nth-child(4){
-	    position: absolute;
-    top: 13%;
-    left: 66%;
+	position: absolute;
+    top: 32%;
+    left: 64%;
 }
-
+.gif_container .gif_box:nth-child(5){
+	position: absolute;
+    top: 44%;
+    left: 78.5%;
+}
 
 /*// popular post*/
 

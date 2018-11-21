@@ -181,30 +181,30 @@ $(document).ready(function(){
 
 
 $(document).ready(function(){
-  $('.date_calendar').owlCarousel({
-      loop:true,
-      margin:5,
-      smartSpeed: 700,
-      stagePadding: 5,
-      nav:true,
-      responsive:{
-          0:{
-              items:1
-          },
-          551:{
-              items:2
-          },
-          768:{
-              items:3
-          },
-          993:{
-              items:3
-          },1367:{
-              items:3
-          }
+  // $('.date_calendar').owlCarousel({
+  //     loop:true,
+  //     margin:5,
+  //     smartSpeed: 700,
+  //     stagePadding: 5,
+  //     nav:true,
+  //     responsive:{
+  //         0:{
+  //             items:1
+  //         },
+  //         551:{
+  //             items:2
+  //         },
+  //         768:{
+  //             items:3
+  //         },
+  //         993:{
+  //             items:3
+  //         },1367:{
+  //             items:3
+  //         }
 
-      }
-  })
+  //     }
+  // })
 
 
 
@@ -243,6 +243,8 @@ $(document).on("click", ".c_next", function(){
             "<span>"+ lastDay +"</span>"+
           "</div>"
         );
+       tranformX -= 57;
+      $(".c_day").css("transform", "translateX("+ tranformX +"px)");
   }else{
     if(day > DATETIME[q]){
         day = 1;
@@ -253,12 +255,19 @@ $(document).on("click", ".c_next", function(){
         q = 0;
       }
       MaxDay = DATETIME[q];
+      $(".c_fluid").append(
+          "<div class=\"c_day\" data-day=\""+ lastDay +"\">"+
+            "<span>"+ lastDay +"</span>"+
+          "</div>"
+        );
+      tranformX -= 57;
+      $(".c_day").css("transform", "translateX("+ tranformX +"px)");
   }
   
   console.log(MONTH[q], day);
 
-  tranformX -= 38;
-  $(".c_day").css("transform", "translateX("+ tranformX +"px)");
+  // tranformX -= 57;
+  // $(".c_day").css("transform", "translateX("+ tranformX +"px)");
 
   $(cDay).removeClass("active");
 
@@ -289,7 +298,7 @@ $(document).on("click", ".c_prev", function(){
           "</div>"
         );
     }else{
-  tranformX += 38;
+  tranformX += 57;
 
       $(".c_day").css("transform", "translateX("+ tranformX +"px)");
     }
@@ -318,7 +327,7 @@ $(document).on("click", ".c_prev", function(){
           "</div>"
         );
     }else{
-  tranformX += 38;
+  tranformX += 57;
 
       $(".c_day").css("transform", "translateX("+ tranformX +"px)");
     }
@@ -457,4 +466,36 @@ var _gaq = _gaq || [];
 
 
 })
+
+
+// Gif 
+
+$(document).ready(function(){
+   $(".gif_box").each(function(index){
+        $(this).on("mouseenter",function(){
+            var leng = $(".gif_box").length 
+            for (var i = 0; i < leng; i++) {
+             $(".gif_box").eq(i).find("img").attr("src","images/tour"+ i +".png") 
+            }
+            $(this).find("img").attr("src","gif/tour_gif"+ index +".gif");
+        })
+   })
+
+
+     $(".gif_box").each(function(index){
+        $(this).on("mouseleave",function(){
+            var leng = $(".gif_box").length 
+            for (var i = 0; i < leng; i++) {
+             $(".gif_box").eq(i).find("img").attr("src","images/tour"+ i +".png") 
+            }
+            // $(this).find("img").attr("src","gif/tour_gif"+ index +".gif");
+        })
+     })
+})
+
+
+
+
+
+// Gif 
 

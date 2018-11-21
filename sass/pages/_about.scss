@@ -26,7 +26,7 @@
 	width: 100%;
 	position: relative;
 	overflow: hidden;
-	padding: 160px 50px 100px;
+	padding: 70px 50px 100px;
 
 	 .about_nature_bg {
 			position: absolute;
@@ -140,14 +140,15 @@
 		 	font-family: 'Conv_bpg_nino_medium_caps';
 		 	text-align: center;
 		 	margin-bottom: 10px;
+		 	font-weight: bold;
 
 		 }
 
 		 p, span{
  				
  				color: #fff;
- 				font-size: 11px !important;
- 				font-family: 'Conv_bpg_web' !important;
+ 				font-size: 12px !important;
+ 				font-family: 'Conv_BPG_Glaho' !important;
  				text-align: justify;
 
 		 }
@@ -223,6 +224,7 @@
 			 	max-width: 470px;
 			    border-bottom: 2px solid #AAAAAA;
 			    padding: 0 30px 10px 140px;
+			    max-width: 600px;
 			 }
     		
 		}
@@ -419,11 +421,18 @@
 
 
 
+.tour_bottom img {
+
+	display: inline-block !important;
+    width: 20px !important;
+    margin-right: 5px;
+}
+
 
 
 .calendar_days {
 	display: flex;
-	width: 365px;
+	    width: 495px;
 	align-items: center;
 	padding: 0 50px;
 	position: relative;
@@ -458,7 +467,7 @@
 
 	  .c_fluid {
 
-	  	  width: 280px;
+	  	/*  width: 280px;*/
 	  	  overflow: hidden;
 	  	  display: flex;
 	  	  align-items: center;
@@ -469,14 +478,15 @@
 	 	 border: 2px solid transparent;
 	 	 width: 36px;
 	 	 height: 36px;
-		 min-width: 36px;	
-		 min-height: 36px;
+		 min-width: 55px;
+         min-height: 55px;
 		 display: flex;
 		 align-items: center;
 		 justify-content: center;
 		 cursor: pointer;
 		 margin-right: 2px;
-			color: #AAA;
+		 font-size: 32px;
+		 color: #AAA;
 
 
 		 		&.active {
@@ -503,12 +513,11 @@
 
 .calendar_down_content {
 	display: flex;
-     width: 310px;
+    width: 310px;
     align-items: center;
     position: relative;
     justify-content: space-between;
-    margin-left: 140px;
-    margin: 7px 0 10px 140px;
+    margin: 7px 0 10px 220px;
 	
 
 
@@ -541,7 +550,7 @@
 	  }
 
 
-	  .c_fluid {
+	  .c_fluid_n {
 	width: 235px;
     overflow: hidden;
     display: flex;
@@ -556,6 +565,7 @@
     min-width: 80px;
     min-height: 30px;
     display: flex;
+    font-size: 20px;
     align-items: center;
     justify-content: center;
     cursor: pointer;
@@ -628,7 +638,7 @@
 
 .owl-item:nth-child(4n) .tour_content {
 	background-color: #DCDBDB;
-	height: 330px;
+	height: 380px;
 }
 
 .owl-item:nth-child(5n) .tour_content {
@@ -638,7 +648,7 @@
 }
 .owl-item:nth-child(3n) .tour_content {
 	 background-color: #CDDAAE;
-    height: 310px;
+    height: 440px;
  
 }
 
@@ -933,15 +943,15 @@
 
 .calendar header .right.button {
 	background: #19CBC5 !important;
+	user-select: none;
 }
 
 .calendar header .left.button {
 	background: #19CBC5 !important;
+	user-select: none;
 }
 
-.calendar header {
-	background: #19CBC5 !important;
-}
+
 
 
 
@@ -958,7 +968,7 @@
 
 	 .js_calendar {
 			
-		 width: 225px;	
+		 width: 260px;
 	 	 position: absolute;
 	 	 top: -100px;
     	 left: 35px;
@@ -970,4 +980,15 @@
 	 	  		display: block;
 	 	  	}
 	 }
+}
+
+
+
+.main_about_fluid .main_top_container .welcome_tittle span{
+	
+	color: #fff;
+}
+
+.main_about_fluid .main_top_container .top_right_content .top_host_box span:first-child:after{
+	background-color: #fff;
 }
