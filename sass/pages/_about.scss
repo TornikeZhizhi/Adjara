@@ -163,7 +163,7 @@
 
 		display: flex;
 		justify-content: space-between;
-		align-items: center;
+		align-items: flex-end;
 
 		 span {
 		 	color: #fff;
@@ -172,7 +172,75 @@
 		 }
 
 
-		 a {
+		 .add_fb {
+		 	position: relative;
+				
+
+			.fb_notification {
+				position: absolute;
+			    top: -2px;
+    			left: 34px;
+			    width: 110px;
+			    background-color: #fff;
+		        padding: 7px 3px;
+		        display: none;
+				
+
+				&:after {
+					    position: absolute;
+					    top: 99%;
+					    left: 0;
+					    z-index: 100;
+					    content: "";
+					    background-image: url(../images/fb_triangle2.png);
+					    background-repeat: no-repeat;
+					    width: 20px;
+					    height: 10px;
+					    background-size: contain;
+				}	
+
+
+				span {
+					color: #19CBC5;
+					font-size:11px;
+					font-family: 'Conv_bpg_nino_medium_caps';
+					margin-bottom: 0px;
+				}
+			}
+
+
+		 	a {
+		 		display: block;
+		 		position: relative;
+
+		 		&:after{
+
+		 			position:absolute;
+		 			width: 100%;
+		 			height: 100%;
+		 			top: 100%;
+		 			left: 0;
+		 			content: "";
+		 			z-index: 100;
+				    background-repeat: no-repeat;
+				    background-image: url(../images/fb_round_shade.png);
+				    background-size: cover;
+				    background-position: center;
+		 		}
+		 		 img {
+		 		 	width: 40px;
+		 		 }
+
+		 	}
+
+		 	 span {
+		 	 	margin-bottom: 10px;
+		 	 	display: block;
+		 	 }
+		 }
+		
+		.rd_more {
+			a {
 		 	    font-family: 'Conv_aSHALVA';
 			    font-size: 22px;
 			    color: #fff;
@@ -198,6 +266,9 @@
 				    background-size: cover;
 			    }
 		 }
+		}
+
+		 
 	}
 }
 
@@ -721,8 +792,8 @@
 	
 	color: transparent;
 	display: block;
-	width: 40px;
-	height: 40px;
+	width: 35px;
+	height: 35px;
 	background-image: url("../images/ab_prev.png");
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -734,8 +805,8 @@
 	
 	color: transparent;
 	display: block;
-	width: 40px;
-	height: 40px;
+	width: 35px;
+	height: 35px;
 	background-image: url("../images/ab_next.png");
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -757,8 +828,8 @@
 
 .about_main_slider .owl-dots button{
 
-	width: 14px;
-	height: 14px;
+	width: 12px;
+	height: 12px;
 	border: 2px solid #D1D3D4;
 	outline: none;
 	position: relative;
@@ -786,8 +857,8 @@
 		left: 50%;
 		transform: translate(-50%,-50%);
 		z-index: 100;
-		width: 7px;
-		height: 7px;
+		width: 5px;
+		height: 5px;
 		background-color: #19CBC5;
 		transition:.4s;
 		opacity: 0;

@@ -1289,12 +1289,58 @@ a:hover {
   .about_nature_info_box .about_nature_links {
     display: flex;
     justify-content: space-between;
-    align-items: center; }
+    align-items: flex-end; }
     .about_nature_info_box .about_nature_links span {
       color: #fff;
       font-family: 'Conv_bpg_nino_medium_caps';
       font-size: 13px; }
-    .about_nature_info_box .about_nature_links a {
+    .about_nature_info_box .about_nature_links .add_fb {
+      position: relative; }
+      .about_nature_info_box .about_nature_links .add_fb .fb_notification {
+        position: absolute;
+        top: -2px;
+        left: 34px;
+        width: 110px;
+        background-color: #fff;
+        padding: 7px 3px;
+        display: none; }
+        .about_nature_info_box .about_nature_links .add_fb .fb_notification:after {
+          position: absolute;
+          top: 99%;
+          left: 0;
+          z-index: 100;
+          content: "";
+          background-image: url(../images/fb_triangle2.png);
+          background-repeat: no-repeat;
+          width: 20px;
+          height: 10px;
+          background-size: contain; }
+        .about_nature_info_box .about_nature_links .add_fb .fb_notification span {
+          color: #19CBC5;
+          font-size: 11px;
+          font-family: 'Conv_bpg_nino_medium_caps';
+          margin-bottom: 0px; }
+      .about_nature_info_box .about_nature_links .add_fb a {
+        display: block;
+        position: relative; }
+        .about_nature_info_box .about_nature_links .add_fb a:after {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 100%;
+          left: 0;
+          content: "";
+          z-index: 100;
+          background-repeat: no-repeat;
+          background-image: url(../images/fb_round_shade.png);
+          background-size: cover;
+          background-position: center; }
+        .about_nature_info_box .about_nature_links .add_fb a img {
+          width: 40px; }
+      .about_nature_info_box .about_nature_links .add_fb span {
+        margin-bottom: 10px;
+        display: block; }
+    .about_nature_info_box .about_nature_links .rd_more a {
       font-family: 'Conv_aSHALVA';
       font-size: 22px;
       color: #fff;
@@ -1307,7 +1353,7 @@ a:hover {
       background-repeat: no-repeat;
       background-position: 100px 15px,center;
       position: relative; }
-      .about_nature_info_box .about_nature_links a:after {
+      .about_nature_info_box .about_nature_links .rd_more a:after {
         position: absolute;
         top: 98%;
         content: "";
@@ -1655,8 +1701,8 @@ a:hover {
 .about_main_slider .owl-prev span {
   color: transparent;
   display: block;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   background-image: url("../images/ab_prev.png");
   background-repeat: no-repeat;
   background-position: center center;
@@ -1665,8 +1711,8 @@ a:hover {
 .about_main_slider .owl-next span {
   color: transparent;
   display: block;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   background-image: url("../images/ab_next.png");
   background-repeat: no-repeat;
   background-position: center center;
@@ -1682,8 +1728,8 @@ a:hover {
   transform: translateX(-50%); }
 
 .about_main_slider .owl-dots button {
-  width: 14px;
-  height: 14px;
+  width: 12px;
+  height: 12px;
   border: 2px solid #D1D3D4;
   outline: none;
   position: relative; }
@@ -1701,8 +1747,8 @@ a:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 100;
-  width: 7px;
-  height: 7px;
+  width: 5px;
+  height: 5px;
   background-color: #19CBC5;
   transition: .4s;
   opacity: 0; }
@@ -1835,7 +1881,7 @@ a:hover {
   .events_about_fluid .header_navbar_fluid {
     background-color: #19CBC5;
     width: 100%;
-    height: 170px; }
+    height: 150px; }
 
 .events_top_content {
   display: flex;
@@ -1851,7 +1897,7 @@ a:hover {
     .events_top_content .event_main_tittle h2 a {
       color: #fff;
       font-family: 'Conv_bebas-neue-regular';
-      font-size: 2.5vw;
+      font-size: 1.8vw;
       position: relative; }
       .events_top_content .event_main_tittle h2 a:after {
         position: absolute;
@@ -1862,6 +1908,19 @@ a:hover {
         left: 50%;
         transform: translateX(-50%);
         bottom: -10px; }
+      .events_top_content .event_main_tittle h2 a:before {
+        position: absolute;
+        content: "";
+        width: 0%;
+        height: 4px;
+        background-color: #19CBC5;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -10px;
+        transition: .4s;
+        z-index: 100; }
+      .events_top_content .event_main_tittle h2 a:hover:before {
+        width: 30%; }
 
 .events_main_fluid {
   width: 100%;
@@ -1877,5 +1936,193 @@ a:hover {
     color: #4D4D4D;
     font-size: 14px;
     font-family: 'Conv_bpg_web'; }
+
+.our_events_tab {
+  max-width: 1215px;
+  margin: 0 auto;
+  padding: 30px 0; }
+  .our_events_tab ul {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #B3B3B3;
+    padding: 10px 0px;
+    cursor: pointer; }
+    .our_events_tab ul li {
+      color: #B3B3B3;
+      font-family: 'Conv_bpg_web_002_caps';
+      font-size: 14px;
+      position: relative; }
+      .our_events_tab ul li:after {
+        position: absolute;
+        top: 30px;
+        left: 0;
+        width: 100%;
+        content: "";
+        height: 2px;
+        background-color: #19CBC5;
+        z-index: 100;
+        opacity: 0;
+        transition: .4s; }
+      .our_events_tab ul li.active:after {
+        opacity: 1; }
+
+.event_calendar_tittle {
+  text-align: center;
+  margin: 65px 0; }
+  .event_calendar_tittle h2 {
+    font-family: 'Conv_bebas-neue-regular';
+    color: #19CBC5;
+    font-size: 36px;
+    position: relative;
+    display: inline-block; }
+    .event_calendar_tittle h2:after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background-color: #19CBC5; }
+
+.tour_calendar_fluid {
+  background-image: url("../images/mountain_event.png"), linear-gradient(to bottom, #19CBC5, #26B9C7, #1878B8);
+  background-position: bottom;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding: 30px 0 200px;
+  overflow: hidden; }
+
+.tour_calendar_tittle {
+  text-align: center;
+  padding: 20px 0; }
+  .tour_calendar_tittle h2 {
+    font-family: 'Conv_bebas-neue-regular';
+    color: #fff;
+    font-size: 36px;
+    position: relative;
+    display: inline-block; }
+    .tour_calendar_tittle h2:after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background-color: #fff; }
+
+.event_calendar_container {
+  max-width: 1510px; }
+
+.event_bn_tittle span {
+  color: #fff;
+  font-size: 40px;
+  font-family: 'Conv_bebas-neue-regular'; }
+
+.event_bn_box {
+  display: flex;
+  background-color: #44B2BC;
+  padding: 15px 20px 10px 30px;
+  border-radius: 10px;
+  overflow: hidden; }
+  .event_bn_box:not(:last-child) {
+    margin-bottom: 20px; }
+  .event_bn_box .event_bn_text_wrapper h4 {
+    font-size: 30px;
+    font-family: 'Conv_bebas-neue-regular';
+    color: #fff; }
+  .event_bn_box .event_bn_text_wrapper p {
+    font-family: 'Conv_BPG_Glaho';
+    color: #fff;
+    font-size: 12px; }
+
+.event_bn_text {
+  overflow-y: scroll;
+  height: 70px;
+  margin-top: 10px;
+  padding-right: 10px; }
+
+.event_bn_text::-webkit-scrollbar {
+  width: 1px; }
+
+.event_bn_links {
+  width: 245px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+  .event_bn_links span {
+    display: block;
+    font-size: 13px;
+    color: #fff;
+    font-family: 'Conv_BPG_Glaho'; }
+    .event_bn_links span img {
+      width: 20px;
+      display: inline-block;
+      margin-right: 10px; }
+  .event_bn_links a {
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Conv_BPG_Glaho';
+    position: relative; }
+    .event_bn_links a:after {
+      position: absolute;
+      content: "";
+      width: 150px;
+      height: 1px;
+      background-color: #fff;
+      top: 25px;
+      left: 0;
+      z-index: 100; }
+
+.event_nd_calendar select {
+  color: #19CBC5;
+  font-family: 'Conv_BPG_Glaho';
+  font-size: 17px;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 240px;
+  padding: 2px 10px;
+  cursor: pointer; }
+  .event_nd_calendar select option {
+    cursor: pointer; }
+
+.tour_calendar_fluid .calendar_days .c_day.active {
+  border-color: #fff;
+  color: #fff; }
+.tour_calendar_fluid .calendar_days .c_day {
+  color: #fff; }
+.tour_calendar_fluid .calendar_down_content .c_month.active {
+  border-color: #fff;
+  color: #fff; }
+.tour_calendar_fluid .calendar_down_content .c_month {
+  color: #fff; }
+.tour_calendar_fluid .calendar_days .c_prev {
+  border-right: 10px solid #fff; }
+.tour_calendar_fluid .calendar_days .c_next {
+  border-left: 10px solid #fff; }
+.tour_calendar_fluid .calendar_down_content .c_month_prev {
+  border-right: 10px solid #fff; }
+.tour_calendar_fluid .calendar_down_content .c_next_month {
+  border-left: 10px solid #fff; }
+.tour_calendar_fluid .cl_calenadar img {
+  filter: brightness(5); }
+.tour_calendar_fluid .calendar_up_content {
+  position: relative; }
+.tour_calendar_fluid .calendar_up_content:after {
+  position: absolute;
+  content: "";
+  top: 99%;
+  left: 0;
+  width: 2000%;
+  height: 1px;
+  background-color: #fff;
+  z-index: 100; }
+.tour_calendar_fluid .calendar_down_content {
+  margin: 10px 0 10px 80px; }
+.tour_calendar_fluid .event_nd_filter {
+  margin-bottom: 30%; }
+
+.event_nd_col {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; }
 
 /*# sourceMappingURL=main.css.map */

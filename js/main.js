@@ -465,8 +465,34 @@ var _gaq = _gaq || [];
 
 
 
-})
+// 2 calendar
 
+$(function () {
+        $('#pnlEventCalendar2').calendar({months: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+          days: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],onSelect: function (event) {
+          $('#lblEventCalendar').text(event.label);
+        }});
+      });
+
+
+
+
+var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+
+
+
+
+})
 
 // Gif 
 
@@ -498,4 +524,44 @@ $(document).ready(function(){
 
 
 // Gif 
+
+
+// Events
+
+
+$(document).ready(function(){
+
+  $(".our_events_tab li").click(function(){
+    $(".our_events_tab li").removeClass("active");
+    $(this).addClass("active");
+  })
+
+//fb notification
+
+$(".add_fb img").on("mouseenter",function(){
+  $(this).parent().parent().find(".fb_notification").fadeIn();
+})
+
+$(".add_fb img").on("mouseleave",function(){
+  $(this).parent().parent().find(".fb_notification").fadeOut();
+})
+
+
+
+})
+
+
+
+
+$(document).ready(function(){
+     $('.event_main_tittle h2 a').click(function(e) {
+    var targetHref = $(this).attr('href');
+    $('html, body').animate({
+        scrollTop: $(targetHref).offset().top
+    }, 800);
+    e.preventDefault();
+  });
+
+  });
+
 
