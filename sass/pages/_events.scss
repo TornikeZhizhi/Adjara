@@ -176,12 +176,28 @@
 
 
 .tour_calendar_fluid {
-	background-image: url("../images/mountain_event.png"),linear-gradient(to bottom ,#19CBC5, #26B9C7 , #1878B8);
+	background-image:linear-gradient(to bottom ,#19CBC5, #26B9C7 , #1878B8);
 	background-position: bottom;
 	background-size: 100%;
 	background-repeat: no-repeat;
 	padding: 30px 0 200px;
 	overflow: hidden;
+	position: relative;
+		
+
+		.calendar_mountain {
+
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			z-index: 100;
+			width: 100%;
+
+			 img {
+			 	width: 100%;
+			 }
+		}
+
 }
 
 .tour_calendar_tittle {

@@ -1985,12 +1985,21 @@ a:hover {
       background-color: #19CBC5; }
 
 .tour_calendar_fluid {
-  background-image: url("../images/mountain_event.png"), linear-gradient(to bottom, #19CBC5, #26B9C7, #1878B8);
+  background-image: linear-gradient(to bottom, #19CBC5, #26B9C7, #1878B8);
   background-position: bottom;
   background-size: 100%;
   background-repeat: no-repeat;
   padding: 30px 0 200px;
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
+  .tour_calendar_fluid .calendar_mountain {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+    width: 100%; }
+    .tour_calendar_fluid .calendar_mountain img {
+      width: 100%; }
 
 .tour_calendar_tittle {
   text-align: center;
