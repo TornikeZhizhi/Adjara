@@ -1,0 +1,84 @@
+
+.events_about_fluid {
+
+	position: relative;
+	height: 100vh;
+	padding: 0;
+
+	 .header_navbar_fluid {
+
+	 	  background-color: #19CBC5;
+	 	  width: 100%;
+	 	  height: 170px;
+	 }
+	
+}
+
+
+.events_top_content {
+
+	 display: flex;
+	 justify-content: space-between;
+	 width: 100%;
+     height: calc(100% - 170px);
+
+		
+		.events_main_box {
+
+			  flex: 0 0 24.7%;
+			  background-image: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),url("../images/nature_bg.png");
+		}
+
+
+		.event_main_tittle {
+
+			text-align: center;
+			margin-top: 60%;
+
+			h2 {
+
+				a {
+					    color: #fff;
+					    font-family: 'Conv_bebas-neue-regular';
+					    font-size: 2.5vw;
+					    position: relative;
+
+					    &:after {
+					    	    position: absolute;
+							    content: "";
+							    width: 30%;
+							    height: 4px;
+							    background-color: #fff;
+							    left: 50%;
+							    transform: translateX(-50%);
+							    bottom: -10px;
+					    }
+				}
+			}
+
+		}
+
+}
+
+
+
+
+.events_main_fluid {
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	padding: 70px 50px 100px;
+
+}
+
+.our_event_text {
+	    max-width: 1215px;
+	    margin: 0 auto;
+	    padding: 30px 0;
+
+	    p {
+	    	color: #4D4D4D;
+	    	font-size: 14px;
+	    	font-family: 'Conv_bpg_web';
+	    }
+}

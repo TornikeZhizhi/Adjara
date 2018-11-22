@@ -1207,30 +1207,32 @@ a:hover {
   position: relative;
   overflow: hidden;
   padding: 70px 50px 100px; }
-  .about_nature_fluid .about_nature_bg {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    background-color: #F7E9E9;
-    width: 100%;
-    height: 40%; }
-  .about_nature_fluid .about_nature_tittle {
-    text-align: center;
-    padding: 30px 0; }
-    .about_nature_fluid .about_nature_tittle h2 {
-      font-family: 'Conv_bebas-neue-regular';
-      color: #19CBC5;
-      font-size: 45px;
-      position: relative;
-      display: inline-block; }
-      .about_nature_fluid .about_nature_tittle h2:after {
-        content: "";
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        height: 4px;
-        background-color: #19CBC5; }
+
+.about_nature_bg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #F7E9E9;
+  width: 100%;
+  height: 40%; }
+
+.about_nature_tittle {
+  text-align: center;
+  padding: 30px 0; }
+  .about_nature_tittle h2 {
+    font-family: 'Conv_bebas-neue-regular';
+    color: #19CBC5;
+    font-size: 45px;
+    position: relative;
+    display: inline-block; }
+    .about_nature_tittle h2:after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background-color: #19CBC5; }
 
 .about_use_text {
   max-width: 1200px;
@@ -1825,5 +1827,55 @@ a:hover {
 
 .main_about_fluid .main_top_container .top_right_content .top_host_box span:first-child:after {
   background-color: #fff; }
+
+.events_about_fluid {
+  position: relative;
+  height: 100vh;
+  padding: 0; }
+  .events_about_fluid .header_navbar_fluid {
+    background-color: #19CBC5;
+    width: 100%;
+    height: 170px; }
+
+.events_top_content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: calc(100% - 170px); }
+  .events_top_content .events_main_box {
+    flex: 0 0 24.7%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/nature_bg.png"); }
+  .events_top_content .event_main_tittle {
+    text-align: center;
+    margin-top: 60%; }
+    .events_top_content .event_main_tittle h2 a {
+      color: #fff;
+      font-family: 'Conv_bebas-neue-regular';
+      font-size: 2.5vw;
+      position: relative; }
+      .events_top_content .event_main_tittle h2 a:after {
+        position: absolute;
+        content: "";
+        width: 30%;
+        height: 4px;
+        background-color: #fff;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -10px; }
+
+.events_main_fluid {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding: 70px 50px 100px; }
+
+.our_event_text {
+  max-width: 1215px;
+  margin: 0 auto;
+  padding: 30px 0; }
+  .our_event_text p {
+    color: #4D4D4D;
+    font-size: 14px;
+    font-family: 'Conv_bpg_web'; }
 
 /*# sourceMappingURL=main.css.map */
