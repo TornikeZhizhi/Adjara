@@ -1229,10 +1229,14 @@ a:hover {
       content: "";
       position: absolute;
       top: 100%;
-      left: 0;
-      width: 100%;
+      left: 50%;
+      width: 45%;
       height: 4px;
-      background-color: #19CBC5; }
+      background-color: #19CBC5;
+      transform: translateX(-50%); }
+
+.event_nd_tt_wrapper {
+  margin: 50px 0; }
 
 .about_use_text {
   max-width: 1200px;
@@ -1996,7 +2000,7 @@ a:hover {
     position: absolute;
     left: 0;
     bottom: 0;
-    z-index: 100;
+    z-index: 0;
     width: 100%; }
     .tour_calendar_fluid .calendar_mountain img {
       width: 100%; }
@@ -2133,5 +2137,142 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: flex-end; }
+
+.events_nd_about_fluid {
+  position: relative;
+  height: 70vh;
+  padding: 0; }
+  .events_nd_about_fluid .main_top_container .welcome_tittle span {
+    color: #fff; }
+  .events_nd_about_fluid .top_host_box span {
+    color: #fff !important; }
+  .events_nd_about_fluid .main_top_container .top_right_content .top_host_box span:first-child:after {
+    background-color: #fff; }
+  .events_nd_about_fluid .event_nd_main_top {
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/nature_bg.png);
+    position: relative; }
+    .events_nd_about_fluid .event_nd_main_top .event_nd_main_top_tittle {
+      position: absolute;
+      top: 50%;
+      left: 20%;
+      transform: translateY(-50%); }
+      .events_nd_about_fluid .event_nd_main_top .event_nd_main_top_tittle h2 {
+        color: #fff;
+        font-family: 'Conv_bebas-neue-regular';
+        font-size: 1.8vw;
+        position: relative; }
+
+.enent_nd_tabs {
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 1px solid #B3B3B3;
+  padding: 10px 0; }
+  .enent_nd_tabs ul {
+    display: flex;
+    width: 50%; }
+    .enent_nd_tabs ul li {
+      color: #B3B3B3;
+      font-family: 'Conv_bpg_web_002_caps';
+      font-size: 11px;
+      position: relative;
+      cursor: pointer; }
+      .enent_nd_tabs ul li.active {
+        color: #19CBC5; }
+      .enent_nd_tabs ul li:not(:last-child) {
+        margin-right: 20px; }
+
+.event_nd_main_fluid {
+  margin-top: 60px; }
+
+.event_nd_main_tittle {
+  text-align: center; }
+  .event_nd_main_tittle h2 {
+    font-size: 14px;
+    color: #4D4D4D;
+    font-family: 'Conv_bpg_web';
+    margin: 15px 0; }
+
+.event_nd_gallery_box_container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto; }
+
+.event_nd_gallery_box_img img {
+  height: 400px;
+  object-fit: cover; }
+
+.event_nd_gallery_box_container .owl-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1; }
+
+.event_nd_gallery_box_container .owl-prev {
+  position: absolute;
+  left: -45px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent !important;
+  border-right: 25px solid #19CBC5 !important;
+  border-bottom: 25px solid transparent !important;
+  outline: none; }
+  .event_nd_gallery_box_container .owl-prev span {
+    display: none; }
+
+.event_nd_gallery_box_container .owl-dots {
+  display: none; }
+
+.event_nd_gallery_box_container .owl-next {
+  position: absolute;
+  right: -45px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+  outline: none;
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent !important;
+  border-left: 25px solid #19CBC5 !important;
+  border-bottom: 25px solid transparent !important; }
+  .event_nd_gallery_box_container .owl-next span {
+    display: none; }
+
+.event_nd_gallery_box_fluid {
+  position: relative;
+  padding: 30px 0;
+  	/*  &:before{
+  	 	
+  	 	position: absolute;
+  	 	width: 100%;
+  	 	height: 100%;
+  	 	background-color: #fff;
+  	 	content: "";
+  	 	top: 0;
+  	 	left: 0;
+  	 	filter: blur(4px);
+  	
+  	 }
+  */ }
+  .event_nd_gallery_box_fluid:after {
+    background-image: url("../images/nature_bg.png");
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    top: 0;
+    left: 0;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(4px); }
+
+.event_nd_main_fluid .home_video_fluid {
+  padding: 100px 80px 30px; }
 
 /*# sourceMappingURL=main.css.map */
