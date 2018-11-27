@@ -597,6 +597,58 @@ $('.event_nd_gallery_box_container').owlCarousel({
       }
   })
 
+
+$('.plan_nd_img_box_container').owlCarousel({
+      loop:true,
+      margin:5,
+      smartSpeed: 700,
+      stagePadding: 0,
+      nav:true,
+      responsive:{
+          0:{
+              items:1
+          },
+          551:{
+              items:2
+          },
+          768:{
+              items:3
+          },
+          993:{
+              items:3
+          },1367:{
+              items:5
+          }
+
+      }
+  })
+
+
+$('.plan_nd_video_box_container').owlCarousel({
+      loop:true,
+      margin:5,
+      smartSpeed: 700,
+      stagePadding: 0,
+      nav:true,
+      responsive:{
+          0:{
+              items:1
+          },
+          551:{
+              items:2
+          },
+          768:{
+              items:3
+          },
+          993:{
+              items:3
+          },1367:{
+              items:5
+          }
+
+      }
+  })
+
   
 })
 
