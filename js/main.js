@@ -47,6 +47,7 @@ $(document).ready(function(){
 
   $(".home_video_box video").mouseenter(function() {
       this.play();
+
   });
 
   $(".home_video_box video").mouseleave(function() {
@@ -264,7 +265,7 @@ $(document).on("click", ".c_next", function(){
       $(".c_day").css("transform", "translateX("+ tranformX +"px)");
   }
   
-  console.log(MONTH[q], day);
+console.log(MONTH[q], day);
 
   // tranformX -= 57;
   // $(".c_day").css("transform", "translateX("+ tranformX +"px)");
@@ -668,5 +669,52 @@ $(".adjara_map div").on("click",function(){
 
 })
 
+
+})
+
+
+
+// Best Hover Effects
+
+$(document).ready(function(){
+
+  var _height = 45;
+
+  $(".season_tab").on("click",function(){
+    $(".season_tab").removeClass("active");
+    $(this).addClass("active");
+
+    var _id = Number($(this).data("id"));
+    var diff = --_id;
+    var tabs = $(".season_tab");
+
+    for(var i = 1; i <= diff; i++){
+      var offsetTop = _height * i + 5;
+      $(tabs[i]).css({
+        "top": "calc(0% + "+ offsetTop +"px)"
+      });
+    }
+
+    var _diff = 4 - _id;
+
+    for(var i = 1; i < _diff; i++){
+      var offsetTop = _height * i + 5;
+      $(tabs[4-i]).css({
+        "top": "calc(100% - "+ offsetTop +"px)"
+      });
+    }
+
+  })
+
+
+
+  // plan dropwdown content
+
+  $(".plan_nd_info_fluid_content_box_tittle").on("click",function(){
+
+    $(this).next(".plan_nd_user_info").slideToggle();
+    $(this).find("img").toggleClass("active");
+
+  })
 
 })

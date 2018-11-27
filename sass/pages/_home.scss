@@ -928,15 +928,7 @@
 }
 
 /*// popular post*/
-
-
-.home_popular_post_fluid {
-	width: 100%;
-	position: relative;
-	overflow: hidden;
-	padding: 160px 50px 100px;
-
-	  .home_popular_post_fluid_tittle {
+.home_popular_post_fluid_tittle {
 
 	  	   text-align: center;
 	  	    h2 {
@@ -958,6 +950,14 @@
 	  	    	}
 	  	    }
 	  }
+
+.home_popular_post_fluid {
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	padding: 160px 50px 100px;
+
+	  
 
 
 	  .home_post_fluid {

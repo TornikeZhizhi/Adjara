@@ -170,14 +170,7 @@
 }
 
 
-
-.event_nd_where_fluid {
-
-	 width: 100%;
-	 background-image: url("../images/");
-
-
-	 .event_nd_where_fluid_tittle {
+.event_nd_where_fluid_tittle {
 	 	text-align: center;
 
 	 	h2 {
@@ -202,12 +195,38 @@
 		    }
 	 	}
 	 }
+
+
+.event_nd_where_fluid {
+
+	width: 100%;
+	background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)) ,url("../images/plan_nd_bg.jpg");
+	background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 60px 0 120px;
+
+
+    .plan_nd_video_box_container {
+    	margin: 55px auto 0;
+    	position: relative;
+					
+					
+
+    }
+
+
+.event_nd_gallery_box_fluid:after{
+	content:unset;
+}
+
+	 
 }
 
 .event_nd_where_fluid_text {
 	max-width: 1200px;
 	width: 90%;
-	margin: 0 auto; 
+	margin: 50px auto 10px;
 
 	 p {
 	 	color: #fff;
@@ -215,5 +234,362 @@
 	 	font-family: 'Conv_BPG_Glaho';
 	 	text-align: justify;
 
+	 }
+}
+
+.plan_nd_img_box_container_wrapper, .plan_nd_video_box_container_wrapper {
+	position: relative;
+	    max-width: 1200px;
+    margin: 0 auto;
+
+    .plan_nd_video_box_container {
+    	width: 100%;
+    }
+
+	.plan_nd_img_box_container_vertical {
+
+						    opacity: .4;
+						    position: absolute;
+						    top: 32%;
+						    right: -170px;
+						    transform: rotate(90deg);
+						    z-index: 1;
+						span {
+							font-family: 'Conv_bebas-neue-regular';
+							font-size: 65px;
+							color: #fff;
+
+						}
+					}
+
+.plan_nd_img_box_container {
+	width: 100%;
+}
+
+}
+
+
+
+
+
+.event_nd_2_fluid {
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/masaaki-komori-597700-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 60px 0 120px;
+    position: relative;
+		    .event_nd_gallery_box_fluid:after {
+		 
+		    content: unset;
+		}
+}
+
+
+ .event_nd_2_fluid_line {
+ 	width: 1px;
+ 	height: 100%;
+ 	position: absolute;
+ 	top: 0;
+ 	left: 50%;
+ 	background-color: #fff;
+ }
+
+.event_nd2_left_tab {
+	    width: 45px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 8%;
+	z-index: 100;
+
+
+	/* &:after{
+
+	 	position:absolute;
+	 	left: 50%;
+	 	width: 1px;
+	 	height: 100%;
+	 	background-color: #fff;
+	 	content: "";
+	 	z-index: 100;
+	 }*/
+
+	 .season_tab{
+	 	background-color: #545a61;
+	 	border: 1px solid transparent;
+	 	border-radius: 50%;
+	 	width: 45px;
+	 	height: 45px;
+	 	display: flex;
+	 	align-items: center;
+	 	justify-content: center;
+	 	transition: 1s;
+	
+
+	 	 &.active {
+	 	 	border: 1px solid #fff;
+	 	 	
+	 	 }
+
+	 	 img {
+	 	 	width: 33px;
+    height: 33px;
+    cursor: pointer;
+	 	 }
+	 }
+
+
+	 .event_nd2_left_tab_content {
+	 	position: absolute;
+	 	width: 100%;
+	 	height: 72%;
+	 	top: 13%;
+	 	left: 0;
+
+	 	.season_tab:nth-child(1){
+	 	 	position: absolute;
+	 	 	top: 0%;
+	 	 	left: 0;
+	 	 }
+
+	 	 .season_tab:nth-child(2){
+	 	 	position: absolute;
+	 	 	top: calc(100% - 150px);
+	 	 	left: 0;
+	 	 }
+
+	 	  .season_tab:nth-child(3){
+	 	 	position: absolute;
+	 	 	top: calc(100% - 100px);
+	 	 	left: 0;
+	 	 }
+
+	 	  .season_tab:nth-child(4){
+	 	 	position: absolute;
+	 	 	top: calc(100% - 50px);
+	 	 	left: 0;
+	 	 }
+	 }
+
+}
+
+
+
+.plan_nd_info_fluid {
+	padding: 80px 0 100px;
+}
+
+.plan_nd_info_fluid_tittle {
+
+	text-align: center;
+
+	 h2 {
+	 	color: #19cbc5;
+	    position: relative;
+	    font-family: 'Conv_bebas-neue-regular';
+	    font-size: 40px;
+	    display: inline-block;
+
+	    &:after{
+	    	    position: absolute;
+			    content: "";
+			    width: 60%;
+			    height: 4px;
+			    background-color: #19cbc5;
+			    left: 50%;
+			    transform: translateX(-50%);
+			    bottom: -5px;
+			    transition: .4s;
+			    z-index: 100;
+	    }
+
+	 }
+}
+
+
+.plan_nd_info_fluid_text {
+
+	max-width: 1200px;
+	width: 90%;
+	margin: 60px auto 30px;
+
+	 p {
+	 	color:#4D4D4D;
+	 	font-family: 'Conv_BPG_Glaho';
+	 	font-size: 14px;
+	 }
+}
+
+
+.plan_nd_info_fluid_content_wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+
+	 .plan_nd_info_fluid_content_box_tittle {
+	 	border-bottom: 1px solid #999999;
+	 	padding: 8px 0;
+	 	 span {
+	 	 	color: #4D4D4D;
+	 	 	font-size: 22px;
+	 	 	font-family: 'Conv_bpg_nino_medium_caps';
+	 	 	line-height: 1;
+	 	 	display: inline-block;
+	 	 	margin-left: 20px;
+	 	 }
+	 }
+
+	 .plan_info_button {
+	 	display: flex;
+	 	align-items: center;
+	 	cursor: pointer;
+
+	 	 img {
+		transition: .4s;
+	 	 	 &.active {
+	 	 	 	transform: rotate(180deg);
+	 	 	 }
+	 	 }
+	 }
+
+
+	 .plan_nd_user_info {
+	 	p {
+	 		color: #4D4D4D;
+	 		font-family: 'Conv_BPG_Glaho';
+	 		font-size: 12px;
+	 	}
+	 }
+}
+
+.plan_nd_user_info {
+	padding: 20px 5px;
+	display: none;
+}
+
+.plan_nd_info_fluid_content_box:not(:last-child){
+	margin-bottom: 15px;
+}
+
+
+.plan_nd_track_fluid {
+	.home_popular_post_fluid_tittle {
+
+		 h2 {
+		 	font-size: 35px;
+		 }
+	}
+}
+
+
+.plan_nd_track_container {
+	max-width: 1200px;
+	margin: 80px auto;
+
+	 .col-lg-6 {
+	 	padding-left: 5px;
+	 	padding-right: 5px;
+	 }
+}
+
+
+.adjara_track_box {
+	position: relative;
+
+	height: 400px;
+
+	 img {
+	 	width: 100%;
+	 	height: 100%;
+	 	object-fit: cover;
+	 }
+
+	 .adjara_track_box_tittle {
+
+	 	position: absolute;
+	 	top: 50%;
+	 	left: 50%;
+	 	transform: translate(-50%,-50%);
+	 	z-index: 1;
+	 	background-color: rgba(0,0,0, .4);
+	 	width: 100%;
+	 	height: 100%;
+	 	display: flex;
+	 	align-items: center;
+	 	justify-content: center;
+
+	 	 h3 {
+	 	 	font-size: 30px;
+	 	 	font-family: 'Conv_bebas-neue-regular';
+	 	 	color: #fff;
+			cursor: pointer;
+	 	 }
+
+	 }
+}
+
+
+
+.plan_nd_track_fluid {
+	    padding: 40px 0 40px;
+}
+
+
+.adjara_track_img {
+
+	height: 235px;
+
+	  img {
+	  	width: 100%;
+	  	height: 100%;
+	  	object-fit: cover;
+	  }
+}
+
+
+.adjara_track_img_row {
+
+
+	 .col-lg-3 {
+	 	padding-left: 5px;
+	 	padding-right: 5px;
+	 	margin-bottom: 40px;
+	 	
+	 }
+}
+
+
+
+.adjara_track_tittle {
+	text-align: center;
+	margin: 40px 0;
+	h3 {
+		color: #4D4D4D;
+		font-size: 30px;
+		font-family: 'Conv_bebas-neue-regular';
+
+	}
+}
+
+
+.adjara_track_info {
+	    padding: 0px 10px;
+	    display: flex;
+	    align-items: center;
+		height: 100%;
+	    .adjara_track_info_child {
+	    	height: 150px;
+	    	overflow-y: scroll;
+
+	    	&::-webkit-scrollbar {
+   			 width: 2px;
+			}
+	    }
+
+	 p {
+		color: #4D4D4D;
+	 	font-size: 13px;
+	 	font-family: 'Conv_BPG_Glaho';
 	 }
 }
