@@ -599,3 +599,22 @@ $('.event_nd_gallery_box_container').owlCarousel({
 
   
 })
+
+
+// Location Map
+
+
+$(document).ready(function(){
+
+$(".adjara_map div").on("click",function(){
+
+  $(".adjara_map div").find("h3").removeClass("active");
+  $(this).find("h3").addClass("active");
+
+  $(".adjara_map div").find("img").attr("src","images/black_pin.png");
+  $(this).find("img").attr("src","images/active_pin.png")
+
+})
+
+
+})

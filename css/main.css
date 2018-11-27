@@ -2287,7 +2287,7 @@ a:hover {
 
 .destination_tittle {
   text-align: center;
-  padding: 30px 0; }
+  padding: 60px 0 30px; }
   .destination_tittle h2 {
     font-family: 'Conv_bebas-neue-regular';
     color: #19CBC5;
@@ -2306,5 +2306,148 @@ a:hover {
 
 .destination_main_fluid .gif_fluid {
   margin-top: 60px; }
+
+.adjara_map_container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 0;
+  display: flex;
+  justify-content: space-around; }
+
+.adjara_map {
+  position: relative; }
+  .adjara_map div {
+    text-align: center;
+    cursor: pointer; }
+    .adjara_map div img {
+      width: 20px; }
+  .adjara_map h3 {
+    font-size: 23px;
+    font-family: 'Conv_bebas-neue-regular'; }
+    .adjara_map h3.active {
+      color: #19CBC5; }
+  .adjara_map .batumi_gv {
+    position: absolute;
+    bottom: 27%;
+    left: 9%;
+    z-index: 10; }
+  .adjara_map .qobuleti_gv {
+    position: absolute;
+    top: 20%;
+    left: 29%;
+    z-index: 10; }
+  .adjara_map .qeda_gv {
+    position: absolute;
+    bottom: 25%;
+    left: 36%;
+    z-index: 10; }
+  .adjara_map .shuaxevi_gv {
+    position: absolute;
+    bottom: 27%;
+    left: 55%;
+    z-index: 10; }
+  .adjara_map .xulo_gv {
+    position: absolute;
+    top: 44%;
+    right: 16%;
+    z-index: 10; }
+
+.adjara_map_content {
+  background-color: #19CBC5;
+  padding: 35px 35px;
+  max-width: 350px;
+  text-align: center;
+  position: relative; }
+  .adjara_map_content:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-image: url(../images/posts_shadow.png);
+    width: 100%;
+    height: 5%;
+    background-repeat: no-repeat;
+    background-position: center center; }
+  .adjara_map_content h2 {
+    font-family: 'Conv_bebas-neue-regular';
+    color: #fff;
+    font-size: 33px;
+    position: relative;
+    display: inline-block; }
+    .adjara_map_content h2:after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      width: 45%;
+      height: 4px;
+      background-color: #fff;
+      transform: translateX(-50%); }
+  .adjara_map_content p {
+    font-family: 'Conv_BPG_Glaho';
+    color: #fff;
+    font-size: 15px;
+    text-align: justify; }
+  .adjara_map_content a {
+    font-family: 'Conv_aSHALVA';
+    font-size: 22px;
+    color: #fff;
+    background: url(../images/readmore_arrow.png), linear-gradient(#B2E2EF, #19CBC5);
+    text-align: right;
+    display: inline-block;
+    float: right;
+    border-radius: 45px;
+    padding: 1px 48px 2px 36px;
+    background-repeat: no-repeat;
+    background-position: 100px 15px,center;
+    position: relative; }
+    .adjara_map_content a:after {
+      position: absolute;
+      top: 98%;
+      content: "";
+      left: 0;
+      width: 100%;
+      background-repeat: no-repeat;
+      height: 100%;
+      background-image: url(../images/readmore_shadow.png);
+      background-size: cover; }
+
+.adjara_map_info {
+  margin: 30px 0 20px;
+  height: 215px;
+  overflow-y: scroll;
+  position: relative; }
+
+.destination_main_wrapper {
+  background-color: #F7F7F7;
+  margin-bottom: 80px; }
+
+.map_content_container {
+  max-width: 1200px; }
+  .map_content_container .map_nd_content {
+    text-align: center;
+    padding: 45px 25px 50px 25px;
+    border-right: 1px dashed #DBDADA; }
+    .map_content_container .map_nd_content img {
+      width: 130px;
+      height: 120px;
+      object-fit: contain; }
+    .map_content_container .map_nd_content h3 {
+      color: #999999;
+      font-size: 21px;
+      font-family: 'Conv_bebas-neue-regular';
+      margin-bottom: 40px; }
+    .map_content_container .map_nd_content p {
+      color: #999999;
+      font-size: 11px;
+      font-family: 'Conv_BPG_Glaho';
+      text-align: justify; }
+
+.map_nd_text {
+  margin-top: 60px;
+  overflow-y: scroll;
+  height: 100px; }
+  .map_nd_text::-webkit-scrollbar {
+    width: 2px; }
 
 /*# sourceMappingURL=main.css.map */
