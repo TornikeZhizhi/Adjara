@@ -537,15 +537,15 @@
  
 .event_nd_gallery_box_container .owl-prev {
 	    position: absolute;
-    left: -45px;
+    left: -30px;
     top: 50%;
     transform: translateY(-50%);
     z-index: 100;
     width: 0;
 	height: 0;
-	border-top: 25px solid transparent !important; 
-	border-right: 25px solid #19CBC5 !important;
-	border-bottom: 25px solid transparent !important;
+	border-top: 15px solid transparent !important; 
+	border-right: 20px solid #19CBC5 !important;
+	border-bottom: 15px solid transparent !important;
 	outline: none;
 	span {
 		display: none;
@@ -556,16 +556,16 @@
 }
 .event_nd_gallery_box_container .owl-next {
 	    position: absolute;
-    right: -45px;
+    right: -30px;
     top: 50%;
     transform: translateY(-50%);
     z-index: 100;
     outline: none;
      width: 0;
 	height: 0;
-	border-top: 25px solid transparent !important; 
-	border-left: 25px solid #19CBC5 !important;
-	border-bottom: 25px solid transparent !important;
+	border-top: 15px solid transparent !important; 
+	border-left: 20px solid #19CBC5 !important;
+	border-bottom: 15px solid transparent !important;
 	span {
 		display: none;
 	}
@@ -872,15 +872,15 @@
 
 	 .owl-prev {
 	    position: absolute;
-	    left: -45px;
+	    left: -30px;
 	    top: 50%;
 	    transform: translateY(-50%);
 	    z-index: 100;
 	    width: 0;
 	    height: 0;
-	    border-top: 25px solid transparent !important;
-	    border-right: 25px solid #fff !important;
-	    border-bottom: 25px solid transparent !important;
+	    border-top: 15px solid transparent !important;
+	    border-right: 20px solid #fff !important;
+	    border-bottom: 15px solid transparent !important;
 	    outline: none;
 	    span {
 	    	display: none;
@@ -889,16 +889,16 @@
 
 	.owl-next {
     position: absolute;
-    right: -45px;
+    right: -30px;
     top: 50%;
     transform: translateY(-50%);
     z-index: 100;
     outline: none;
     width: 0;
     height: 0;
-    border-top: 25px solid transparent !important;
-    border-left: 25px solid #fff !important;
-    border-bottom: 25px solid transparent !important;
+    border-top: 15px solid transparent !important;
+    border-left: 20px solid #fff !important;
+    border-bottom: 15px solid transparent !important;
     span {
 	    	display: none;
 	    }
@@ -926,15 +926,15 @@ img {
 
 			 .owl-prev {
 	    position: absolute;
-	    left: -45px;
+	    left: -30px;
 	    top: 50%;
 	    transform: translateY(-50%);
 	    z-index: 100;
 	    width: 0;
 	    height: 0;
-	    border-top: 25px solid transparent !important;
-	    border-right: 25px solid #fff !important;
-	    border-bottom: 25px solid transparent !important;
+	   border-top: 15px solid transparent !important;
+    	border-right: 20px solid #fff !important;
+    	border-bottom: 15px solid transparent !important;
 	    outline: none;
 	    span {
 	    	display: none;
@@ -943,16 +943,16 @@ img {
 
 	.owl-next {
     position: absolute;
-    right: -45px;
+    right: -30px;
     top: 50%;
     transform: translateY(-50%);
     z-index: 100;
     outline: none;
     width: 0;
     height: 0;
-    border-top: 25px solid transparent !important;
-    border-left: 25px solid #fff !important;
-    border-bottom: 25px solid transparent !important;
+    border-top: 15px solid transparent !important;
+    border-left: 20px solid #fff !important;
+    border-bottom: 15px solid transparent !important;
     span {
 	    	display: none;
 	    }
