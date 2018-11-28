@@ -539,11 +539,11 @@ $(document).ready(function(){
 
 //fb notification
 
-$(".add_fb img").on("mouseenter",function(){
+$(".add_fb a img").on("mouseenter",function(){
   $(this).parent().parent().find(".fb_notification").fadeIn();
 })
 
-$(".add_fb img").on("mouseleave",function(){
+$(".add_fb a img").on("mouseleave",function(){
   $(this).parent().parent().find(".fb_notification").fadeOut();
 })
 
@@ -716,5 +716,30 @@ $(document).ready(function(){
     $(this).find("img").toggleClass("active");
 
   })
+
+
+
+ $('.adjara_track_box_tittle h3 a').click(function(e) {
+    var targetHref = $(this).attr('href');
+    $('html, body').animate({
+        scrollTop: $(targetHref).offset().top
+    }, 800);
+    e.preventDefault();
+  });
+
+
+
+ // Plain house hover 
+
+ 
+  $(".plan_house_tabs div").mouseenter(function(){
+      $(this).find(".house_dropdown").slideDown()
+  })
+
+  $(".plan_house_tabs div").mouseleave(function(){
+      $(this).find(".house_dropdown").slideUp()
+  })
+
+
 
 })

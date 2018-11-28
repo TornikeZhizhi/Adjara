@@ -2867,7 +2867,7 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center; }
-    .adjara_track_box .adjara_track_box_tittle h3 {
+    .adjara_track_box .adjara_track_box_tittle h3 a {
       font-size: 30px;
       font-family: 'Conv_bebas-neue-regular';
       color: #fff;
@@ -2910,5 +2910,128 @@ a:hover {
     color: #4D4D4D;
     font-size: 13px;
     font-family: 'Conv_BPG_Glaho'; }
+
+.plan_house_tabs {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0 70px;
+  position: relative;
+  max-width: 625px;
+  height: 160px;
+  margin: 0 auto; }
+  .plan_house_tabs > div {
+    width: 285px;
+    border-radius: 30px;
+    text-align: center;
+    padding: 7px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .plan_house_tabs > div:not(:last-child) {
+      margin-right: 40px; }
+    .plan_house_tabs > div span {
+      font-family: 'Conv_bebas-neue-regular';
+      font-size: 25px;
+      cursor: pointer; }
+  .plan_house_tabs .house_location {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #DBDADA;
+    box-shadow: inset 1px -1px 10px #fff; }
+    .plan_house_tabs .house_location .house_dropdown {
+      display: none; }
+      .plan_house_tabs .house_location .house_dropdown ul li {
+        font-family: 'Conv_bebas-neue-regular';
+        font-size: 25px;
+        color: #19CBC5;
+        cursor: pointer; }
+    .plan_house_tabs .house_location span {
+      color: #19CBC5;
+      position: relative; }
+      .plan_house_tabs .house_location span:after {
+        position: absolute;
+        content: "";
+        top: 7px;
+        right: -33px;
+        width: 24px;
+        height: 24px;
+        background-image: url(../images/plan_tr.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center; }
+  .plan_house_tabs .house_book {
+    background-color: #19CBC5;
+    box-shadow: inset 1px -1px 10px #00000042;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100; }
+    .plan_house_tabs .house_book .house_dropdown {
+      display: none; }
+      .plan_house_tabs .house_book .house_dropdown ul li {
+        font-family: 'Conv_bebas-neue-regular';
+        font-size: 25px;
+        color: #fff;
+        cursor: pointer; }
+    .plan_house_tabs .house_book span {
+      color: #fff;
+      position: relative; }
+      .plan_house_tabs .house_book span:after {
+        position: absolute;
+        content: "";
+        top: 7px;
+        right: -33px;
+        width: 24px;
+        height: 24px;
+        background-image: url(../images/plan_wh.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center; }
+
+.house_location:hover .house_dropdown {
+  height: 100%; }
+
+.house_book:hover .house_dropdown {
+  height: 100%; }
+
+.plan_house_container .col-lg-8 {
+  padding-bottom: 300px; }
+
+.plan_house_main_content_row .col-lg-4 {
+  padding-left: 4px;
+  padding-right: 4px;
+  margin-bottom: 60px; }
+.plan_house_main_content_row .about_nature_info_box .about_nature_links .rd_more a {
+  padding: 1px 35px 2px 36px; }
+.plan_house_main_content_row .about_nature_info_box {
+  background-color: transparent; }
+.plan_house_main_content_row .about_nature_info_box .about_nature_text h3 {
+  color: #4D4D4D; }
+.plan_house_main_content_row .about_nature_info_box .about_nature_text p, .plan_house_main_content_row .about_nature_info_box .about_nature_text span {
+  color: #4d4d4d; }
+.plan_house_main_content_row .about_nature_info_box .about_nature_links span {
+  color: #999999;
+  font-size: 10px;
+  width: 100%; }
+.plan_house_main_content_row .about_nature_links span img {
+  width: 14px; }
+.plan_house_main_content_row .about_nature_content_box .about_nature_img img {
+  width: 100%;
+  height: 275px;
+  object-fit: cover; }
+
+.plain_map_container {
+  width: 100%;
+  height: 100%; }
+  .plain_map_container iframe {
+    height: 100%; }
+
+.plan_house_fluid .home_popular_post_fluid_tittle {
+  margin: 40px 0; }
+  .plan_house_fluid .home_popular_post_fluid_tittle h2 {
+    font-size: 35px; }
 
 /*# sourceMappingURL=main.css.map */
