@@ -228,7 +228,7 @@
 	  	  .top_host_box {
 
 	  	  	    span {
-	  	  	    	font-size: 11px;
+	  	  	    	font-size: 12px;
 			  	  	color: #00665C;
 			  	  	font-family: 'Conv_kalinga';
 			  	  	text-transform: uppercase;
@@ -508,7 +508,7 @@
 	 transform: translateX(-50%);
 	 top:60%;
 	 z-index: 10;
-	 width: 360px;
+	 width: 420px;
 
 
 	  form {
@@ -523,6 +523,13 @@
 			 	color: #19CBC5;
 			 	transition: .4s;
 			 	font-family: 'Conv_bpg_nino_medium_caps';
+			 	text-align: center;
+
+			 	&::placeholder{
+			 		letter-spacing: 2px;
+					color:#fff;
+					opacity: .9;
+			 	}
 			 	
 
 			 	&:focus {

@@ -236,7 +236,7 @@ a:hover {
     display: flex;
     justify-content: center; }
     .main_top_container .top_right_content .top_host_box span {
-      font-size: 11px;
+      font-size: 12px;
       color: #00665C;
       font-family: 'Conv_kalinga';
       text-transform: uppercase;
@@ -433,7 +433,7 @@ a:hover {
   transform: translateX(-50%);
   top: 60%;
   z-index: 10;
-  width: 360px; }
+  width: 420px; }
   .home_search_box form {
     border-radius: 50px;
     display: flex;
@@ -444,7 +444,12 @@ a:hover {
       padding: 0px 15px;
       color: #19CBC5;
       transition: .4s;
-      font-family: 'Conv_bpg_nino_medium_caps'; }
+      font-family: 'Conv_bpg_nino_medium_caps';
+      text-align: center; }
+      .home_search_box form input::placeholder {
+        letter-spacing: 2px;
+        color: #fff;
+        opacity: .9; }
       .home_search_box form input:focus {
         background-color: rgba(255, 255, 255, 0.9); }
       .home_search_box form input:focus + button {
@@ -2131,7 +2136,6 @@ a:hover {
   margin-right: 10px; }
 
 .event_bn_links {
-  width: calc(100% - 275px);
   display: flex;
   flex-direction: column;
   justify-content: space-around; }
@@ -2601,10 +2605,9 @@ a:hover {
       display: none; }
 
 .plan_fluid {
-  height: 75vh;
   width: 100%;
   position: relative;
-  padding: 0;
+  padding-bottom: 60px;
   background-color: #19CBC5; }
   .plan_fluid .header_navbar_fluid {
     background-color: #19CBC5;
@@ -2672,7 +2675,7 @@ a:hover {
     font-family: 'Conv_BPG_Glaho';
     z-index: 100;
     background: #fff;
-    padding: 0px 0px; }
+    padding: 0px 10px 0 0; }
 
 .plan_culture_content_container {
   width: 100%;
@@ -2696,7 +2699,8 @@ a:hover {
     font-size: 10px;
     width: 80px; }
     .plan_main_fluid .container .about_nature_info_box .about_nature_links span img {
-      width: 14px; }
+      width: 14px;
+      display: inline-block; }
   .plan_main_fluid .container .fb_notification span {
     color: #000 !important;
     width: unset !important; }
@@ -2731,7 +2735,8 @@ a:hover {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  padding: 60px 0 120px; }
+  padding: 60px 0 120px;
+  overflow: hidden; }
   .event_nd_where_fluid .plan_nd_video_box_container {
     margin: 55px auto 0;
     position: relative; }
@@ -2751,7 +2756,8 @@ a:hover {
 .plan_nd_img_box_container_wrapper, .plan_nd_video_box_container_wrapper {
   position: relative;
   max-width: 1200px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  width: 90%; }
   .plan_nd_img_box_container_wrapper .plan_nd_video_box_container, .plan_nd_video_box_container_wrapper .plan_nd_video_box_container {
     width: 100%; }
   .plan_nd_img_box_container_wrapper .plan_nd_img_box_container_vertical, .plan_nd_video_box_container_wrapper .plan_nd_img_box_container_vertical {
@@ -2768,7 +2774,14 @@ a:hover {
   .plan_nd_img_box_container_wrapper .plan_nd_img_box_container, .plan_nd_video_box_container_wrapper .plan_nd_img_box_container {
     width: 100%; }
 
+.rout_fluid {
+  margin-top: 60px;
+  overflow: hidden; }
+  .rout_fluid .event_nd_gallery_box_fluid:after {
+    content: unset; }
+
 .event_nd_2_fluid {
+  overflow: hidden;
   width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/masaaki-komori-597700-unsplash.jpg);
   background-repeat: no-repeat;
@@ -2945,6 +2958,21 @@ a:hover {
       color: #fff;
       cursor: pointer; }
 
+.plan_main_fluid .owl-nav {
+  display: none; }
+.plan_main_fluid .owl-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px; }
+.plan_main_fluid .owl-dots button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #39d1d9;
+  outline: none; }
+  .plan_main_fluid .owl-dots button:not(:last-child) {
+    margin-right: 10px; }
+
 .plan_nd_track_fluid {
   padding: 40px 0 40px; }
 
@@ -3104,6 +3132,54 @@ a:hover {
 /*.plan_house_fluid {
 	
 }*/
+.rout_fluid .plan_tab {
+  max-width: 1205px;
+  margin: 0 auto; }
+
+.plan_tittle {
+  text-align: center;
+  margin: 40px 0px 20px; }
+  .plan_tittle h2 {
+    font-family: 'Conv_bebas-neue-regular';
+    color: #19CBC5;
+    font-size: 35px;
+    position: relative;
+    display: inline-block; }
+    .plan_tittle h2:after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      width: 45%;
+      height: 4px;
+      background-color: #19CBC5;
+      transform: translateX(-50%); }
+
+.tags_fluid {
+  width: 100%;
+  padding: 70px 0; }
+  .tags_fluid .tags_container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto; }
+    .tags_fluid .tags_container .tags_box {
+      flex: 0 0 9%;
+      margin-bottom: 20px;
+      display: flex;
+      margin-right: 25px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 25px;
+      padding: 7px 10px;
+      border: 1px solid #19CBC5; }
+      .tags_fluid .tags_container .tags_box span {
+        color: #19CBC5;
+        font-size: 14px;
+        font-family: 'Conv_BPG_Glaho';
+        cursor: pointer; }
+
 .home_popular_post_fluid_tittle {
   margin: 40px 0; }
   .home_popular_post_fluid_tittle h2 {
@@ -3266,6 +3342,35 @@ a:hover {
 
 .rour_nd_fluid {
   padding: 80px 0; }
+
+.search_main_fluid {
+  width: 100%;
+  padding-bottom: 100px; }
+  .search_main_fluid .destination_tittle {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative; }
+  .search_main_fluid .search_word {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 100; }
+    .search_main_fluid .search_word span {
+      color: #000;
+      font-weight: bold;
+      font-family: 'Conv_BPG_Glaho'; }
+
+.search_main_fluid .plan_tab:after {
+  width: 100%;
+  height: 1px;
+  border: 1px solid #19CBC5;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  z-index: 1; }
+.search_main_fluid .nature_container {
+  margin-bottom: 50px; }
 
 @media only screen and (min-width: 1950px) {
   .mountain_box {
@@ -3723,7 +3828,91 @@ a:hover {
     font-size: 15px; }
 
   .footer_fluid .footer_top .footer_top_content .footer_top_contact_tittle h3 {
-    font-size: 20px; } }
+    font-size: 20px; }
+
+  .plan_main_fluid h2 {
+    font-size: 22px; }
+
+  .plan_main_fluid {
+    padding-bottom: 150px; }
+
+  .plan_fluid .gif_fluid {
+    height: 490px; }
+
+  .plan_house_container .col-lg-8 {
+    padding-bottom: unset; }
+
+  .plan_house_container .plain_map_container {
+    height: 300px;
+    margin-bottom: 50px; }
+
+  .plan_house_main_content_row .col-lg-4 {
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-bottom: 20px; }
+
+  .plan_house_tabs > div {
+    width: 140px; }
+
+  .plan_house_tabs > div span {
+    font-size: 15px; }
+
+  .plan_house_tabs .house_location span:after {
+    position: absolute;
+    content: "";
+    top: 5px;
+    right: -19px;
+    width: 14px;
+    height: 14px; }
+
+  .plan_house_tabs .house_book span:after {
+    position: absolute;
+    content: "";
+    top: 5px;
+    right: -19px;
+    width: 14px;
+    height: 14px; }
+
+  .plan_house_tabs .house_location .house_dropdown ul li {
+    font-size: 14px; }
+
+  .plan_house_tabs .house_book .house_dropdown ul li {
+    font-size: 14px; }
+
+  .event_nd_where_fluid_tittle h2 {
+    font-size: 22px; }
+
+  .plan_nd_img_box_container_wrapper, .plan_nd_video_box_container_wrapper {
+    width: 80%; }
+
+  .event_nd2_left_tab {
+    width: 100%;
+    height: 45px;
+    position: absolute;
+    top: 2%;
+    left: 0%;
+    z-index: 100; }
+
+  .event_nd_2_fluid_line {
+    width: 100%;
+    height: 1px;
+    top: 50%;
+    left: 0; }
+
+  .event_nd2_left_tab .event_nd2_left_tab_content .season_tab:nth-child(4) {
+    left: calc(100% - 50px);
+    top: -7px; }
+
+  .event_nd2_left_tab .event_nd2_left_tab_content .season_tab:nth-child(3) {
+    left: calc(100% - 100px);
+    top: -7px; }
+
+  .event_nd2_left_tab .event_nd2_left_tab_content .season_tab:nth-child(2) {
+    left: calc(100% - 150px);
+    top: -7px; }
+
+  .event_nd2_left_tab .event_nd2_left_tab_content .season_tab:nth-child(1) {
+    top: -7px; } }
 @media only screen and (max-width: 768px) {
   .en_menu_fluid .en_menu_container > div {
     flex: 0 0 53%;

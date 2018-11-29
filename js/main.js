@@ -668,7 +668,7 @@ $('.plan_culture_content_container').owlCarousel({
               items:3
           },
           993:{
-              items:3
+              items:4
           },1367:{
               items:5
           }
