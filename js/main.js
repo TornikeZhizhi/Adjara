@@ -386,10 +386,11 @@ $('.about_main_slider').owlCarousel({
     loop:true,
     margin:10,
     responsive:{
-        600:{
-
-            items: 4
-        }
+        0:{
+            items:1
+        },992:{
+              items:4
+          }
     }
 });
 
@@ -650,6 +651,31 @@ $('.plan_nd_video_box_container').owlCarousel({
       }
   })
 
+$('.plan_culture_content_container').owlCarousel({
+      loop:true,
+      margin:5,
+      smartSpeed: 700,
+      stagePadding: 0,
+      nav:true,
+      responsive:{
+          0:{
+              items:1
+          },
+          551:{
+              items:2
+          },
+          768:{
+              items:3
+          },
+          993:{
+              items:3
+          },1367:{
+              items:5
+          }
+
+
+      }
+  })
   
 })
 
@@ -741,10 +767,26 @@ $(document).ready(function(){
   })
 
 
-  // modal slider
+  // Gif Fluid Link
+
+  $(".gif_container .gif_box").eq(0).click(function(){
+    window.location.href = "plan_nd_go.html"
+  })
+  $(".gif_container .gif_box").eq(1).click(function(){
+    window.location.href = "plan_housed.html"
+  })
+  $(".gif_container .gif_box").eq(2).click(function(){
+    window.location.href = "plan_nd2.html"
+  })
+  $(".gif_container .gif_box").eq(3).click(function(){
+    window.location.href = "plan.html"
+  })
+  $(".gif_container .gif_box").eq(4).click(function(){
+    window.location.href = "plan_nd_info.html"
+  })
 
 
-  // modal slider
+// Gif Fluid Link
 
 
 })
