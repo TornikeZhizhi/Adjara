@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title></title>
+	 <meta charset="UTF-8">
+   	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" href="css/jquery.calendar.css" />
+	<link rel="stylesheet" href="assets/owlcarousel/assets/owl.carousel.min.css">
+   	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+
+	<!-- 	<script src="assets/vendors/jquery.min.js"></script> -->
+    
+
+</head>
+<body>
+
+
+<!-- // modal -->
+<div class="plan_house_modal calendar_modal">
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	     
+	      	<div class="plan_modal_slider">
+				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="images/nature_bg.png" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/nature_bg.png" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/nature_bg.png" alt="Third slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true">
+    	<img src="images/plan_sl_left.png">
+    </span>
+
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true">
+    	<img src="images/plan_sl_right.png">
+    </span>
+   
+  </a>
+</div>
+
+	      	</div>
+
+	      	<div class="plan_slider_info calendar_modal">
+
+				<div class="plan_slider_left">
+					<div class="plan_slider_left_up calendar_left_up">
+						<h4>სათაური</h4>
+						<div class="plan_slider_text calendar_slider_text">
+							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet სასტუმრო
+							dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+							lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+							molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui
+							blandit praesent luptatum zzril delenit augue duis dolore te fe ugait nulla facilisi.</p>
+						</div>
+					</div>
+					<div class="calendar_modal_logo_link">
+						
+					<div class="plan_slider_left_down calendar_left_down">
+						<img src="images/PlayStation.png">
+					</div>
+						<div class="plan_slider_link calendar_slider_link">
+						<a href="">gaige meti</a>
+					</div>
+					</div>
+				</div>
+
+				<div class="plan_slider_right">
+					<div class="plan_slider_category">
+						<h5>კატეგორია</h5>
+						<span>ხულო</span>
+						<span>სასტუმრო</span>
+					</div>
+
+					<div class="plan_slider_contact">
+						<h5>საჭირო ინფორმაცია</h5>
+
+						<span><img src="images/Group 323@2x.png"> მაჭახელა</span>
+						<span><img src="images/Group 277@2x.png">12:00</span>
+						<span><img src="images/sand_clock.png">ქ. თბილისი, ტ.ტაბიძის ქუჩა . #86, 0179</span>
+						<span><img src="images/lari.png">info@ajara.ge</span>
+					</div>
+
+
+
+					<div class="plan_slider_contact calendar_slider_contanct">
+						<h5>კონტაქტი</h5>
+
+						<span><img src="images/sl_phone.png"> +995 (32) 293 56 56</span>
+						<span><img src="images/sl_mobile.png">+995 (95) 293 56 56</span>
+						<span><img src="images/sl_location.png">ქ. თბილისი, ტ.ტაბიძის ქუჩა . #86, 0179</span>
+						<span><img src="images/sl_message.png">info@ajara.ge</span>
+					</div>
+
+				</div>
+
+	      	</div>
+	  
+	    </div>
+	  </div>
+	</div>
+</div>
+<!-- //modal -->
+
+<div class="container-fluid tour_nd_calendar_fluid" id="home">
+
+		<!-- Top Scroll -->
+		<div class="top_scoll">
+
+			<a href="#home"><img src="images/top_scroll.png"></a>
+	
+		</div>
+
+	<!-- Top Scroll -->
+
+
+
+	<!-- Main Menu -->
+		<div class="main_menu_fluid">
+			<div class="main_navbar">
+				<ul>
+					<li><a href="about.html">აჭარის შესახებ</a></li>
+					<li><a href="location.html">ადგილმდებარეობა</a></li>
+					<li><a href="route.html">მარშრუტები</a></li>
+					<li><a href="events.html">ღონისძიებები</a></li>
+					<li><a href="plan.html">დაგეგმვა</a></li>
+				</ul>
+			</div>
+		</div>
+	
+	<!-- Main Menu -->
+
+
+	<div class="header_navbar_fluid">
+		<div class="main_top_container">
+
+			<div class="top_left_content">
+				<div class="main_logo">
+					<a href="index.html"><img src="images/main_logo.png"> </a>
+				</div>
+				<div class="welcome_tittle">
+					<span>Welcome To</span>
+					<h2>THE OFFICIAL
+					TRAVEL GUIDE
+					OF ADJARA</h2>
+				</div>
+			</div>
+
+
+			<div class="top_right_content">
+				<div class="top_host_box">
+					<span>GOBATUMI.COM</span>
+					<span>INFOADJARA.COM</span>
+				</div>
+				<div class="top_langugage_menu_box">
+
+					<div class="language_box">
+						<span>Eng</span>
+					</div>
+
+
+					<div class="hamburger_menu model-5">
+						<div class="bar bur1"></div>
+						<div class="bar bur2"></div>
+						<div class="bar bur3"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+</div>
+<!-- Main Menu -->
+
+
+</div>
+
+
+<!-- // 2 content -->
+<div class="calendar_fluid" id="event_calendar">
+	
+	<div class="event_calendar_tittle">
+		<h2>ტურების კალენდარი</h2>
+
+	</div>
+
+	<div class="calendar_container clearfix">
+
+	  <div class="calendar_left">
+
+
+		<div class="calendar_up_content">
+
+		<div class="calendar_days">
+				
+			<div class="c_prev"></div>	
+			<div class="c_next"></div>	
+		
+			<div class="c_fluid">
+
+
+
+
+				<div class="c_day active"  data-day="1">
+					<span>1</span>
+				</div>
+				<div class="c_day" data-day="2">
+					<span>2</span>
+				</div>
+				<div class="c_day" data-day="3">
+					<span>3</span>
+				</div>
+				<div class="c_day" data-day="4">
+					<span>4</span>
+				</div>
+				<div class="c_day" data-day="5">
+					<span>5</span>
+				</div>
+				<div class="c_day" data-day="6">
+					<span>6</span>
+				</div>
+				<div class="c_day" data-day="7">
+					<span>7</span>
+				</div>
+			</div>
+		</div>
+
+
+		</div>
+
+
+
+
+		<div class="calendar_down_content">
+			
+					
+			<div class="c_fluid_n">
+
+				<div class="c_month_prev"></div>	
+					<div class="c_next_month"></div>	
+		
+
+
+
+				<div class="c_month active"  data-month="0">
+					<span>იანვარი</span>
+				</div>
+				<div class="c_month" data-month="1">
+					<span>თებერვალი</span>
+				</div>
+				<div class="c_month" data-month="2">
+					<span>მარტი</span>
+				</div>
+				<div class="c_month" data-month="3">
+					<span>აპრილი</span>
+				</div>
+				<div class="c_month" data-month="4">
+					<span>მაისი</span>
+				</div>
+				<div class="c_month" data-month="5">
+					<span>ივნისი</span>
+				</div>
+				<div class="c_month" data-month="6">
+					<span>ივლისი</span>
+				</div>
+				<div class="c_month" data-month="7">
+					<span>აგვისტო</span>
+				</div>
+
+				<div class="c_month" data-month="8">
+					<span>სექტემბერი</span>
+				</div>
+
+				<div class="c_month" data-month="9">
+					<span>ოქტომბერი</span>
+				</div>
+
+				<div class="c_month" data-month="10">
+					<span>ნოემბერი</span>
+				</div>
+
+				<div class="c_month" data-month="11">
+					<span>დეკემბერი</span>
+				</div>
+			</div>
+
+
+
+			<div class="cl_calenadar">
+				
+				<img src="images/icon-calendar.png">
+
+				<section class="js_calendar">
+					<div id="pnlEventCalendar" style="width:100%;"></div>
+				<!-- <p>selected date: <b><span id="lblEventCalendar">[date]</span></b></p> -->
+				</section>
+			</div>
+		</div>
+
+
+	</div>
+
+
+
+
+		<div class="calendar_right_filter">
+
+			<form action="/action_page.php">
+			  <select name="cars">
+			    <option value="volvo">ქობულეთი</option>
+			    <option value="saab">ბათუმი</option>
+			    <option value="fiat">აჭარა</option>
+			    <option value="audi">მუხიანი</option>
+			  </select>
+			</form>
+		</div>
+	</div>
+
+	<div class="tour_calendar_nd_container container">
+		<div class="row">
+			
+		<div class="col-lg-3">
+			<div class="tour_content">
+				<div class="tour_tittle">
+					<h2>ტური ქობულეთში</h2>
+				</div>
+				<div class="tour_date">
+					
+					<div class="tour_cn_wrapper">
+						<div class="tour_dt">21</div>
+						<div class="tour_dt_n">
+							<span>მარტი</span>
+							<span>24-მდე</span>
+						</div>
+					</div>
+
+					<div class="tou_cl_info_tittle">
+						<h3>ტურების პროდუქტების 
+					განვითარბეის სააგენტო</h3>
+					</div>
+				</div>
+
+				<div class="tour_bottom">
+					<span><img src="images/time_grey.png"> 20 მარტი</span>
+					<span data-toggle="modal" data-target="#exampleModal">ნახე სრულად</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-lg-3">
+			<div class="tour_content">
+				<div class="tour_tittle">
+					<h2>ტური ქობულეთში</h2>
+				</div>
+				<div class="tour_date">
+					
+					<div class="tour_cn_wrapper">
+						<div class="tour_dt">21</div>
+						<div class="tour_dt_n">
+							<span>მარტი</span>
+							<span>24-მდე</span>
+						</div>
+					</div>
+
+					<div class="tou_cl_info_tittle">
+						<h3>ტურების პროდუქტების 
+					განვითარბეის სააგენტო</h3>
+					</div>
+				</div>
+
+				<div class="tour_bottom">
+					<span><img src="images/time_grey.png"> 20 მარტი</span>
+					<span data-toggle="modal" data-target="#exampleModal">ნახე სრულად</span>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-3">
+			<div class="tour_content">
+				<div class="tour_tittle">
+					<h2>ტური ქობულეთში</h2>
+				</div>
+				<div class="tour_date">
+					
+					<div class="tour_cn_wrapper">
+						<div class="tour_dt">21</div>
+						<div class="tour_dt_n">
+							<span>მარტი</span>
+							<span>24-მდე</span>
+						</div>
+					</div>
+
+					<div class="tou_cl_info_tittle">
+						<h3>ტურების პროდუქტების 
+					განვითარბეის სააგენტო</h3>
+					</div>
+				</div>
+
+				<div class="tour_bottom">
+					<span><img src="images/time_grey.png"> 20 მარტი</span>
+					<span data-toggle="modal" data-target="#exampleModal">ნახე სრულად</span>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-3">
+			<div class="tour_content">
+				<div class="tour_tittle">
+					<h2>ტური ქობულეთში</h2>
+				</div>
+				<div class="tour_date">
+					
+					<div class="tour_cn_wrapper">
+						<div class="tour_dt">21</div>
+						<div class="tour_dt_n">
+							<span>მარტი</span>
+							<span>24-მდე</span>
+						</div>
+					</div>
+
+					<div class="tou_cl_info_tittle">
+						<h3>ტურების პროდუქტების 
+					განვითარბეის სააგენტო</h3>
+					</div>
+				</div>
+
+				<div class="tour_bottom">
+					<span><img src="images/time_grey.png"> 20 მარტი</span>
+					<span>ნახე სრულად</span>
+				</div>
+			</div>
+		</div>
+			<div class="col-lg-3">
+			<div class="tour_content">
+				<div class="tour_tittle">
+					<h2>ტური ქობულეთში</h2>
+				</div>
+				<div class="tour_date">
+					
+					<div class="tour_cn_wrapper">
+						<div class="tour_dt">21</div>
+						<div class="tour_dt_n">
+							<span>მარტი</span>
+							<span>24-მდე</span>
+						</div>
+					</div>
+
+					<div class="tou_cl_info_tittle">
+						<h3>ტურების პროდუქტების 
+					განვითარბეის სააგენტო</h3>
+					</div>
+				</div>
+
+				<div class="tour_bottom">
+					<span><img src="images/time_grey.png"> 20 მარტი</span>
+					<span data-toggle="modal" data-target="#exampleModal">ნახე სრულად</span>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-3">
+			<div class="tour_content">
+				<div class="tour_tittle">
+					<h2>ტური ქობულეთში</h2>
+				</div>
+				<div class="tour_date">
+					
+					<div class="tour_cn_wrapper">
+						<div class="tour_dt">21</div>
+						<div class="tour_dt_n">
+							<span>მარტი</span>
+							<span>24-მდე</span>
+						</div>
+					</div>
+
+					<div class="tou_cl_info_tittle">
+						<h3>ტურების პროდუქტების 
+					განვითარბეის სააგენტო</h3>
+					</div>
+				</div>
+
+				<div class="tour_bottom">
+					<span><img src="images/time_grey.png"> 20 მარტი</span>
+					<span data-toggle="modal" data-target="#exampleModal">ნახე სრულად</span>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-3">
+			<div class="tour_content">
+				<div class="tour_tittle">
+					<h2>ტური ქობულეთში</h2>
+				</div>
+				<div class="tour_date">
+					
+					<div class="tour_cn_wrapper">
+						<div class="tour_dt">21</div>
+						<div class="tour_dt_n">
+							<span>მარტი</span>
+							<span>24-მდე</span>
+						</div>
+					</div>
+
+					<div class="tou_cl_info_tittle">
+						<h3>ტურების პროდუქტების 
+					განვითარბეის სააგენტო</h3>
+					</div>
+				</div>
+
+				<div class="tour_bottom">
+					<span><img src="images/time_grey.png"> 20 მარტი</span>
+					<span data-toggle="modal" data-target="#exampleModal">ნახე სრულად</span>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-3">
+			<div class="tour_content">
+				<div class="tour_tittle">
+					<h2>ტური ქობულეთში</h2>
+				</div>
+				<div class="tour_date">
+					
+					<div class="tour_cn_wrapper">
+						<div class="tour_dt">21</div>
+						<div class="tour_dt_n">
+							<span>მარტი</span>
+							<span>24-მდე</span>
+						</div>
+					</div>
+
+					<div class="tou_cl_info_tittle">
+						<h3>ტურების პროდუქტების 
+					განვითარბეის სააგენტო</h3>
+					</div>
+				</div>
+
+				<div class="tour_bottom">
+					<span><img src="images/time_grey.png"> 20 მარტი</span>
+					<span data-toggle="modal" data-target="#exampleModal">ნახე სრულად</span>
+				</div>
+			</div>
+		</div>
+
+
+
+
+		</div>
+	</div>
+
+
+
+</div>
+
+
+
+
+
+<!-- //footer -->
+
+
+<div class="footer_fluid">
+
+	<!-- //footer  top-->
+
+	<div class="footer_top">
+
+		<div class="footer_top_content">
+			<div class="footer_top_contact_tittle">
+				<h3>საკონტაქტო ფორმა</h3>
+			</div>
+			<form>
+				
+				<input type="text" name="">
+				<label class="ln_box"></label>
+				<button>გაგზავნა</button>
+			</form>
+		</div>
+	</div>
+
+	<!-- //footer bottom -->
+	<div class="footer_main_info_wrapper">
+
+		<div class="footer_logo">
+
+			<img src="images/batumi_lg.png">
+		</div>
+
+
+
+
+		<div class="footer_about">
+			<div class="footer_about_us_tittle">
+				<h3>ჩვენს შესახებ</h3>
+			</div>
+
+			<div class="footer_about_text">
+				<p>მარკეტერის ისტორია 2011 წლის 1 სექტემბერს იწყება. წლების
+					განმავლობაში მარკეტერი აშუქებს საინტერესო ამბებს და
+					ისტორიებს ბიზნეს სამყაროდან, ჩვენ ვცდილობთ გაგაცნოთ
+					ადამიანები, რომლებიც ქართულ და მსოფლიოს წამყვანი ქვეყნების
+					შემოქმედებით ინდუსტრიებში მოღვაწეობენ. 2013 წლიდან
+					არსებობს Marketer.ge-ს საავტორო პროექტი Spotlight.
+					ge.მარკეტერის ისტორია 2011 წლის 1 სექტემბერს იწყება.
+					წლების განმავლობაში მარკეტერი აშუქებს საინტერესო ამბებს და</p>
+
+			</div>
+		</div>
+
+
+
+
+		<div class="footer_menu">
+			<div class="footer_menu_content">
+				
+				<div class="footer_menu_tittle">
+					<h3>მენიუ</h3>
+				</div>
+
+
+				<div class="footer_nav">
+					<ul>
+						<li><a href="">აჭარის შესახებ</a></li>
+						<li><a href="">საინფორმაციო ბაზა</a></li>
+						<li><a href="">კომერციული პროექტები</a></li>
+						<li><a href="">ტურები</a></li>
+						<li><a href="">რეგისტრაცია</a></li>
+						<li><a href="">სტატისტიკა</a></li>
+						<li><a href="">საიტის რუკა</a></li>
+						<li><a href="">წესები და პირობები</a></li>
+					</ul>
+				</div>
+		
+
+			</div>
+		</div>
+
+
+		<div class="footer_contacts">
+
+			<div class="footer_contact_tittle">
+				<h3>კონტაქტი</h3>
+			</div>
+
+			<div class="footer_contact_box">
+			
+				<span><img src="images/white_phone.png"><span>+995 (32) 293 56 56</span></span>
+				<span><img src="images/white_mobile.png"><span>+995 (32) 293 56 56</span></span>
+				<span><img src="images/white_location.png"><span>ქ. თბილისი, ტ. ტაბიძის ქუჩა . #86, 0179</span></span>
+				<span><img src="images/white_email.png"><span>info@ajara.ge</span></span>
+
+			</div>
+
+		</div>
+	</div>
+
+
+<div class="footer_fa_icons">
+	
+	<a href=""><img src="images/ft_fb.png"></a>
+	<a href=""><img src="images/ft_youtube.png"></a>
+	<a href=""><img src="images/ft_twitter.png"></a>
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery.calendar.js"></script>
+<script src="assets/owlcarousel/owl.carousel.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

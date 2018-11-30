@@ -658,14 +658,24 @@ a:hover {
         bottom: -5px;
         transition: .4s;
         z-index: 100; }
-  .gif_fluid .gif_box {
-    text-align: center; }
-    .gif_fluid .gif_box h3 {
-      color: #fff;
-      font-family: 'Conv_aSHALVA';
-      font-size: 30px; }
-    .gif_fluid .gif_box img {
-      cursor: pointer; }
+
+.gif_box {
+  text-align: center; }
+  .gif_box h3 {
+    color: #fff;
+    font-family: 'Conv_aSHALVA';
+    font-size: 30px; }
+  .gif_box img {
+    cursor: pointer; }
+
+.gif_box2 {
+  text-align: center; }
+  .gif_box2 h3 {
+    color: #fff;
+    font-family: 'Conv_aSHALVA';
+    font-size: 30px; }
+  .gif_box2 img {
+    cursor: pointer; }
 
 .gif_container .gif_box:nth-child(1) {
   position: absolute;
@@ -696,6 +706,39 @@ a:hover {
   left: 64%; }
 
 .gif_container .gif_box:nth-child(5) {
+  position: absolute;
+  top: 44%;
+  left: 78.5%; }
+
+.gif_container .gif_box2:nth-child(1) {
+  position: absolute;
+  top: 42%;
+  left: 17%;
+  height: 97px;
+  width: 168px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; }
+
+.gif_container .gif_box2:nth-child(2) {
+  position: absolute;
+  top: 47%;
+  left: 38%; }
+  .gif_container .gif_box2:nth-child(2) h3 {
+    padding-bottom: 20px; }
+
+.gif_container .gif_box2:nth-child(3) {
+  position: absolute;
+  top: 38%;
+  left: 53%; }
+
+.gif_container .gif_box2:nth-child(4) {
+  position: absolute;
+  top: 32%;
+  left: 64%; }
+
+.gif_container .gif_box2:nth-child(5) {
   position: absolute;
   top: 44%;
   left: 78.5%; }
@@ -992,7 +1035,23 @@ a:hover {
   background-size: cover;
   background-position: center;
   padding-bottom: 20px;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden; }
+  .footer_fluid .footer_about_text {
+    height: 160px;
+    overflow-y: scroll; }
+    .footer_fluid .footer_about_text::-webkit-scrollbar {
+      width: 0px; }
+  .footer_fluid:after {
+    position: absolute;
+    content: "";
+    bottom: 205px;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    background-color: #fff;
+    z-index: 1; }
   .footer_fluid .footer_top {
     display: flex;
     justify-content: center;
@@ -1045,7 +1104,8 @@ a:hover {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  padding: 40px 0; }
+  padding: 55px 15px 40px;
+  position: relative; }
   .footer_main_info_wrapper .footer_logo {
     width: 15%;
     padding-top: 20px; }
@@ -1101,7 +1161,19 @@ a:hover {
 .footer_nav ul li a {
   font-size: 16px;
   color: #fff;
-  font-family: 'Conv_bebas-neue-regular'; }
+  font-family: 'Conv_bebas-neue-regular';
+  position: relative; }
+  .footer_nav ul li a:after {
+    position: absolute;
+    top: 4px;
+    left: -18px;
+    width: 10px;
+    height: 10px;
+    background-image: url(../images/footer_arrow.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    content: ""; }
 
 .footer_contacts .footer_contact_tittle {
   text-align: center;
@@ -1127,7 +1199,7 @@ a:hover {
   font-family: 'Conv_bebas-neue-regular';
   font-size: 16px; }
   .footer_contacts .footer_contact_box > span:not(:last-child) {
-    margin-bottom: 30px; }
+    margin-bottom: 7px; }
   .footer_contacts .footer_contact_box > span img {
     padding-right: 10px; }
 
@@ -1161,6 +1233,29 @@ a:hover {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%) !important; }
+
+.footer_nd_menu {
+  margin-right: 71px;
+  margin-top: 80px; }
+  .footer_nd_menu.footer_nd_last {
+    margin-top: 45px; }
+  .footer_nd_menu ul li a {
+    font-size: 16px;
+    color: #fff;
+    font-family: 'Conv_bebas-neue-regular';
+    position: relative;
+    text-transform: uppercase; }
+    .footer_nd_menu ul li a:after {
+      position: absolute;
+      top: 4px;
+      left: -18px;
+      width: 10px;
+      height: 10px;
+      background-image: url(../images/footer_arrow.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center center;
+      content: ""; }
 
 /*Responsive*/
 /*@media only screen and (min-width: 1950px) {
@@ -1449,7 +1544,27 @@ a:hover {
 .calendar_fluid {
   width: 100%;
   background: #FCF9F9;
-  padding-bottom: 130px; }
+  padding-bottom: 130px;
+  position: relative;
+  overflow: hidden; }
+  .calendar_fluid .calendar_n_readmore {
+    position: absolute;
+    bottom: 50px;
+    right: 5%; }
+    .calendar_fluid .calendar_n_readmore a {
+      color: #AAAAAA;
+      font-size: 30px;
+      font-family: 'Conv_bebas-neue-regular';
+      position: relative; }
+      .calendar_fluid .calendar_n_readmore a:after {
+        position: absolute;
+        width: 500px;
+        height: 2px;
+        content: "";
+        background-color: #AAAAAA;
+        z-index: 1;
+        top: 100%;
+        left: 0; }
   .calendar_fluid .calendar_container {
     margin-bottom: 50px;
     width: inherit;
@@ -1726,7 +1841,19 @@ a:hover {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  width: 100%; }
+  width: 100%;
+  overflow: hidden; }
+  .tour_content .tou_cl_info_tittle {
+    color: #4E4D51;
+    font-family: 'Conv_bebas-neue-regular';
+    font-size: 23px;
+    margin-top: 10%;
+    padding: 0 70px;
+    text-align: center; }
+  .tour_content .tour_cn_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
 
 .owl-item:nth-child(4n) .tour_content {
   background-color: #DCDBDB;
@@ -1754,7 +1881,8 @@ a:hover {
 .tour_date {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  flex-direction: column; }
 
 .tour_dt {
   font-family: 'Conv_bebas-neue-regular';
@@ -1768,11 +1896,23 @@ a:hover {
 
 .tour_bottom {
   display: flex;
-  justify-content: space-around;
-  width: 100%; }
+  justify-content: space-between;
+  width: 90%; }
   .tour_bottom span {
     font-family: 'Conv_bebas-neue-regular';
-    color: #4E4D51; }
+    color: #4E4D51;
+    cursor: pointer; }
+    .tour_bottom span:last-child {
+      position: relative; }
+      .tour_bottom span:last-child:after {
+        position: absolute;
+        width: 100px;
+        height: 1px;
+        content: "";
+        background-color: #6D6767;
+        z-index: 1;
+        top: 100%;
+        left: 0; }
 
 .about_main_slider .owl-prev, .about_main_slider .owl-next {
   outline: none; }
@@ -2071,6 +2211,24 @@ a:hover {
   padding: 30px 0 200px;
   overflow: hidden;
   position: relative; }
+  .tour_calendar_fluid .tour_calendar_n_readmore {
+    position: absolute;
+    top: 55%;
+    right: 5%;
+    z-index: 100; }
+    .tour_calendar_fluid .tour_calendar_n_readmore a {
+      font-family: 'Conv_bebas-neue-regular';
+      color: #fff;
+      font-size: 30px; }
+      .tour_calendar_fluid .tour_calendar_n_readmore a:after {
+        position: absolute;
+        width: 500px;
+        height: 2px;
+        content: "";
+        background-color: #fff;
+        z-index: 1;
+        top: 100%;
+        left: 0; }
   .tour_calendar_fluid .calendar_mountain {
     position: absolute;
     left: 0;
@@ -2144,7 +2302,8 @@ a:hover {
     font-size: 13px;
     width: 120px;
     color: #fff;
-    font-family: 'Conv_BPG_Glaho'; }
+    font-family: 'Conv_BPG_Glaho';
+    margin-bottom: 10px; }
     .event_bn_links span img {
       width: 20px;
       display: inline-block;
@@ -2211,11 +2370,11 @@ a:hover {
 .tour_calendar_fluid .calendar_down_content {
   margin: 10px 0 10px 80px; }
 .tour_calendar_fluid .event_nd_filter {
-  margin-bottom: 30%; }
+  margin-bottom: 7%; }
 
 .event_nd_col {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-end; }
 
 .events_nd_about_fluid {
@@ -2361,6 +2520,12 @@ a:hover {
   width: 100%;
   position: relative;
   padding: 0; }
+  .location_fluid .main_top_container .welcome_tittle span {
+    color: #fff; }
+  .location_fluid .main_top_container .top_right_content .top_host_box span {
+    color: #fff; }
+    .location_fluid .main_top_container .top_right_content .top_host_box span:after {
+      background-color: #fff; }
 
 .location_fluid .header_navbar_fluid {
   background-color: #19CBC5;
@@ -2604,6 +2769,80 @@ a:hover {
     .plan_nd_video_box_container .owl-next span {
       display: none; }
 
+.events_calendar_fluid {
+  width: 100%;
+  padding: 0; }
+  .events_calendar_fluid .tour_calendar_fluid {
+    padding: 165px 0 200px; }
+  .events_calendar_fluid .main_top_container .welcome_tittle span {
+    color: #fff; }
+  .events_calendar_fluid .main_top_container .top_right_content .top_host_box span {
+    color: #fff; }
+    .events_calendar_fluid .main_top_container .top_right_content .top_host_box span:after {
+      background-color: #fff; }
+  .events_calendar_fluid .event_nd_calendar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px; }
+  .events_calendar_fluid .event_bn_box {
+    padding: 20px 20px 25px 30px; }
+
+.tour_nd_calendar_fluid {
+  position: relative;
+  width: 100%;
+  padding: 0; }
+  .tour_nd_calendar_fluid .header_navbar_fluid {
+    background-color: #19CBC5;
+    width: 100%;
+    height: 150px; }
+  .tour_nd_calendar_fluid .main_top_container .welcome_tittle span {
+    color: #fff; }
+  .tour_nd_calendar_fluid .main_top_container .top_right_content .top_host_box span {
+    color: #fff; }
+    .tour_nd_calendar_fluid .main_top_container .top_right_content .top_host_box span:after {
+      background-color: #fff; }
+
+.tour_calendar_nd_container .col-lg-3 {
+  padding-right: 4px;
+  padding-left: 4px;
+  margin-bottom: 5px; }
+.tour_calendar_nd_container .tour_content .tou_cl_info_tittle {
+  padding: 0px 35px; }
+  .tour_calendar_nd_container .tour_content .tou_cl_info_tittle h3 {
+    font-size: 20px; }
+.tour_calendar_nd_container .col-lg-3:nth-child(4n +1) .tour_content {
+  background-color: #CDDAAE; }
+.tour_calendar_nd_container .col-lg-3:nth-child(4n +2) .tour_content {
+  background-color: #F7E9E9; }
+.tour_calendar_nd_container .col-lg-3:nth-child(4n +3) .tour_content {
+  background-color: #AFE1EF; }
+.tour_calendar_nd_container .col-lg-3:nth-child(4n +4) .tour_content {
+  background-color: #DCDBDB; }
+
+.calendar_slider_contanct {
+  border-bottom: none !important;
+  padding-bottom: 20px !important; }
+
+.calendar_slider_link {
+  padding: 0px 0 !important;
+  border: none !important;
+  align-items: center;
+  margin-left: 10px; }
+
+.calendar_modal_logo_link {
+  display: flex;
+  margin-top: 30px; }
+
+.calendar_left_up {
+  border-bottom: 1px solid #999999 !important; }
+
+.calendar_left_down {
+  border-top: unset !important; }
+
+.calendar_slider_text {
+  padding-bottom: 37px !important; }
+
 .plan_fluid {
   width: 100%;
   position: relative;
@@ -2745,7 +2984,7 @@ a:hover {
 
 .event_nd_where_fluid_text {
   max-width: 1200px;
-  width: 90%;
+  width: 72%;
   margin: 50px auto 10px; }
   .event_nd_where_fluid_text p {
     color: #fff;
@@ -2789,6 +3028,10 @@ a:hover {
   background-size: cover;
   padding: 60px 0 120px;
   position: relative; }
+  .event_nd_2_fluid .plan_nd_img_box_container_wrapper {
+    width: 72%; }
+  .event_nd_2_fluid .plan_nd_video_box_container_wrapper {
+    width: 72%; }
   .event_nd_2_fluid .plan_nd_img_box_container_wrapper .plan_nd_img_box_container_vertical, .event_nd_2_fluid .plan_nd_video_box_container_wrapper .plan_nd_img_box_container_vertical {
     right: -85px; }
   .event_nd_2_fluid .event_nd_gallery_box_fluid:after {
@@ -3233,6 +3476,8 @@ a:hover {
       font-size: 9px;
       display: block;
       margin-bottom: 3px; }
+      .plan_house_modal .plan_slider_info .plan_slider_right span img {
+        width: 15px; }
 
 .modal-open .modal {
   background-color: rgba(0, 0, 0, 0.7); }
@@ -3246,19 +3491,21 @@ a:hover {
 .plan_slider_contact {
   border: 1px solid #999;
   border-top: none;
-  padding: 5px 20px; }
+  padding: 5px 12px;
+  background: #fff; }
 
 .plan_slider_category {
   border: 1px solid #999;
   border-top: none;
-  padding: 3px 20px; }
+  padding: 3px 12px; }
 
 .plan_slider_link {
   padding: 18px 20px;
   border: 1px solid #999;
   border-top: none;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  background: #fff; }
   .plan_slider_link a {
     font-family: 'Conv_aSHALVA';
     font-size: 17px;
@@ -3379,6 +3626,9 @@ a:hover {
   .gif_fluid .gif_box h3 {
     font-size: 25px; }
 
+  .gif_fluid .gif_box2 h3 {
+    font-size: 25px; }
+
   .main_tittle_box h1 {
     font-size: 135px; }
 
@@ -3410,7 +3660,14 @@ a:hover {
   .top_scoll img {
     max-width: 50px; } }
 @media only screen and (max-width: 1280px) {
+  .plan_nd_info_fluid_content_wrapper {
+    padding: 0 20px; }
+
   .gif_container .gif_box:nth-child(2) {
+    top: 55%;
+    left: 37%; }
+
+  .gif_container .gif_box2:nth-child(2) {
     top: 55%;
     left: 37%; }
 
@@ -3445,6 +3702,28 @@ a:hover {
     top: 45%; }
 
   .gif_container .gif_box:nth-child(5) {
+    top: 50%; }
+
+  .gif_fluid .gif_box2 img {
+    cursor: pointer;
+    max-width: 120px;
+    max-height: 50px; }
+
+  .gif_container .gif_box2:nth-child(1) {
+    top: 46%;
+    left: 15%;
+    height: 80px; }
+
+  .gif_container .gif_box2:nth-child(2) h3 {
+    padding-bottom: 5px; }
+
+  .gif_container .gif_box2:nth-child(3) {
+    top: 50%; }
+
+  .gif_container .gif_box2:nth-child(4) {
+    top: 45%; }
+
+  .gif_container .gif_box2:nth-child(5) {
     top: 50%; } }
 @media only screen and (max-width: 1024px) and (max-height: 640px) {
   .main_tittle_box h1 {
@@ -3452,10 +3731,96 @@ a:hover {
 
   .b_cloud img {
     max-width: 600px; } }
+@media only screen and (max-width: 1182px) {
+  .footer_fluid:after {
+    bottom: 225px; } }
+@media only screen and (max-width: 1080px) {
+  .footer_fluid:after {
+    bottom: 250px; } }
 /*//992................................................................................*/
 @media only screen and (max-width: 992px) {
+  .plan_slider_left_up {
+    padding: 10px; }
+
+  .plan_house_modal .plan_slider_info .plan_slider_right span {
+    margin-bottom: 7px; }
+
+  .calendar_left_up {
+    padding: 10px 10px; }
+
+  .plan_house_modal .plan_slider_info .plan_slider_left .plan_slider_left_up .plan_slider_text {
+    padding-bottom: 0px !important; }
+
+  .plan_slider_left_down img {
+    width: 30px; }
+
+  .plan_house_modal .carousel-control-prev-icon img, .plan_house_modal .carousel-control-next-icon img {
+    width: 17px; }
+
+  .plan_house_modal .plan_slider_info .plan_slider_left {
+    flex: 0 0 65%; }
+
+  .plan_house_modal .plan_slider_info .plan_slider_right {
+    flex: 0 0 50%; }
+
+  .plan_slider_category {
+    padding: 3px 15px; }
+
+  .plan_slider_left_down {
+    margin-left: 15px;
+    margin-bottom: 10px; }
+
+  .plan_house_modal .plan_slider_info {
+    background-color: #fff;
+    display: flex;
+    padding: unset;
+    flex-direction: column; }
+
+  .calendar_modal_logo_link {
+    margin-top: 10px;
+    justify-content: space-evenly;
+    padding-bottom: 20px; }
+
+  .calendar_slider_contanct {
+    padding-bottom: 40px !important;
+    background: #fff; }
+
+  .tags_fluid .tags_container .tags_box {
+    margin: 2%; }
+
+  .destination_tittle {
+    padding: 15px 0 40px; }
+
+  .search_main_fluid .search_word {
+    top: 70%;
+    right: 10px; }
+
+  .destination_tittle h2 {
+    font-size: 22px; }
+
+  .tags_fluid {
+    padding: 30px 0; }
+
+  .event_nd_tt_wrapper {
+    margin: 15px 0; }
+
+  .plan_nd_info_fluid_tittle h2 {
+    font-size: 22px; }
+
+  .plan_nd_info_fluid {
+    padding: 30px 0 100px; }
+
+  .plan_nd_info_fluid_text {
+    margin: 30px auto 30px; }
+
+  .plan_nd_info_fluid_content_wrapper .plan_nd_info_fluid_content_box_tittle span {
+    font-size: 18px; }
+
   .events_nd_about_fluid .event_nd_main_top .event_nd_main_top_tittle h2 {
     font-size: 22px; }
+
+  .tou_cl_info_tittle h3 {
+    font-size: 20px; }
 
   .event_nd_gallery_box_container {
     width: 80%; }
@@ -3536,11 +3901,19 @@ a:hover {
     height: unset; }
 
   .owl-item .tour_content {
-    height: 280px !important; }
+    height: 280px !important;
+    padding: 10px 0px; }
 
   .tour_content {
     max-width: 95%;
     margin: 0 auto; }
+
+  .calendar_fluid .calendar_n_readmore {
+    position: absolute;
+    bottom: 93px;
+    right: 5%; }
+    .calendar_fluid .calendar_n_readmore a {
+      font-size: 18px; }
 
   .cl_calenadar img {
     width: 23px; }
@@ -3638,7 +4011,14 @@ a:hover {
     flex: 0 0 50%;
     margin-bottom: 30px; }
 
+  .gif_container .gif_box2 {
+    flex: 0 0 50%;
+    margin-bottom: 30px; }
+
   .gif_container .gif_box:nth-child(5) {
+    top: 100%; }
+
+  .gif_container .gif_box2:nth-child(5) {
     top: 100%; }
 
   .gif_fluid .gif_tittle h2 {
@@ -3648,6 +4028,12 @@ a:hover {
     width: unset !important; }
 
   .gif_box {
+    position: unset !important; }
+
+  .gif_container .gif_box2:nth-child(1) {
+    width: unset !important; }
+
+  .gif_box2 {
     position: unset !important; }
 
   .main_tittle_box h1 {
@@ -3666,6 +4052,21 @@ a:hover {
     justify-content: flex-start;
     margin-left: 7px;
     padding-right: 55px; }
+
+  .tour_calendar_fluid .tour_calendar_n_readmore {
+    top: 83%; }
+
+  .map_content_container .map_nd_content {
+    padding: 5px 10px 5px 10px; }
+
+  .about_nature_info_box {
+    padding: 10px 10px 20px; }
+
+  .events_calendar_fluid .event_calendar_container > .row {
+    flex-direction: unset !important; }
+
+  .events_calendar_fluid .event_nd_calendar {
+    flex-direction: column-reverse; }
 
   .main_top_container .top_langugage_menu_box {
     margin-top: unset; }
@@ -3912,10 +4313,33 @@ a:hover {
     top: -7px; }
 
   .event_nd2_left_tab .event_nd2_left_tab_content .season_tab:nth-child(1) {
-    top: -7px; } }
+    top: -7px; }
+
+  .adjara_track_box {
+    height: 200px; }
+
+  .adjara_track_img_row .col-lg-3 {
+    margin-bottom: 15px; }
+
+  .adjara_track_img_row .col-lg-9 {
+    margin-bottom: 25px; } }
 @media only screen and (max-width: 768px) {
+  .home_video_container .home_video_wrapper {
+    flex-direction: column;
+    align-items: center; }
+
+  .home_video_box {
+    width: 90%;
+    margin-bottom: 10px; }
+
   .en_menu_fluid .en_menu_container > div {
     flex: 0 0 53%;
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+
+  .plan_nd_img_box_container_wrapper {
+    width: 95%; }
+
+  .plan_nd_video_box_container_wrapper {
+    width: 95%; } }
 
 /*# sourceMappingURL=main.css.map */

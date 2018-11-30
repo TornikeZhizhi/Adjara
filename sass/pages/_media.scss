@@ -13,6 +13,10 @@
     
     font-size: 25px;
 }
+    .gif_fluid .gif_box2 h3 {
+    
+    font-size: 25px;
+}
 
 .main_tittle_box h1 {
   
@@ -70,7 +74,17 @@
 
 @media only screen and (max-width: 1280px) {
 
+    .plan_nd_info_fluid_content_wrapper {
+
+        padding: 0 20px;
+    }
+
     .gif_container .gif_box:nth-child(2) {
+  
+    top: 55%;
+    left: 37%;
+}
+    .gif_container .gif_box2:nth-child(2) {
   
     top: 55%;
     left: 37%;
@@ -123,6 +137,37 @@
 
 }
 
+    .gif_fluid .gif_box2 img {
+    cursor: pointer;
+    max-width: 120px;
+    max-height: 50px;
+}
+.gif_container .gif_box2:nth-child(1) {
+    top: 46%;
+    left: 15%;
+    height: 80px;
+}
+.gif_container .gif_box2:nth-child(2) h3 {
+    padding-bottom: 5px;
+}
+
+.gif_container .gif_box2:nth-child(3) {
+
+    top: 50%;
+   
+}
+
+.gif_container .gif_box2:nth-child(4) {
+ 
+    top: 45%;
+
+}
+
+.gif_container .gif_box2:nth-child(5) {
+ 
+    top: 50%;
+
+}
 }
 
 
@@ -141,15 +186,145 @@
 
 }
 
+@media only screen and (max-width: 1182px){
+.footer_fluid:after {
+    
+    bottom: 225px;
+   
+}
+}
+@media only screen and (max-width: 1080px){
+.footer_fluid:after {
+    
+    bottom: 250px;
+   
+}
+}
 
 /*//992................................................................................*/
 
 @media only screen and (max-width: 992px){
 
+    .plan_slider_left_up {
+        padding: 10px;
+    }
+
+    .plan_house_modal .plan_slider_info .plan_slider_right span {
+   
+    margin-bottom: 7px;
+}
+
+    .calendar_left_up {
+
+    padding: 10px 10px;
+}
+
+.plan_house_modal .plan_slider_info .plan_slider_left .plan_slider_left_up .plan_slider_text{
+    padding-bottom: 0px !important;
+}
+
+    .plan_slider_left_down img {
+    width: 30px;
+}
+
+
+    .plan_house_modal .carousel-control-prev-icon, .plan_house_modal .carousel-control-next-icon {
+
+
+     img {
+        width: 17px;
+     }
+}
+.plan_house_modal .plan_slider_info .plan_slider_left {
+    flex: 0 0 65%;
+}
+.plan_house_modal .plan_slider_info .plan_slider_right {
+    flex: 0 0 50%;
+}
+.plan_slider_category {
+
+    padding: 3px 15px;
+}
+
+.plan_slider_left_down {
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+    .plan_house_modal .plan_slider_info {
+    background-color: #fff;
+    display: flex;
+    padding: unset;
+        flex-direction: column;
+}
+.calendar_modal_logo_link {
+    
+    margin-top: 10px;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+ 
+}
+.calendar_slider_contanct {
+   
+    padding-bottom: 40px !important;
+    background: #fff;
+}
+
+    .tags_fluid .tags_container .tags_box {
+ 
+    margin: 2%;
+}
+.destination_tittle {
+
+    padding: 15px 0 40px;
+}
+.search_main_fluid .search_word {
+    top: 70%;
+    right: 10px;
+}
+
+.destination_tittle h2 {
+
+    font-size: 22px;
+  ;
+}
+
+.tags_fluid {
+    padding: 30px 0;
+}
+.event_nd_tt_wrapper {
+    margin: 15px 0;
+}
+
+    .plan_nd_info_fluid_tittle h2 {
+
+    font-size: 22px;
+
+}
+.plan_nd_info_fluid {
+    padding: 30px 0 100px;
+}
+.plan_nd_info_fluid_text {
+
+    margin: 30px auto 30px;
+}
+
+.plan_nd_info_fluid_content_wrapper .plan_nd_info_fluid_content_box_tittle span {
+
+    font-size: 18px;
+   
+}
+
     .events_nd_about_fluid .event_nd_main_top .event_nd_main_top_tittle h2 {
 
     font-size: 22px;
 
+}
+
+.tou_cl_info_tittle {
+    h3 {
+        font-size: 20px;
+    }
 }
 
 .event_nd_gallery_box_container {
@@ -269,6 +444,7 @@
     .owl-item .tour_content {
 
     height: 280px !important;
+    padding: 10px 0px;
 }
 
 .tour_content {
@@ -276,6 +452,16 @@
     max-width: 95%;
     margin: 0 auto;
    
+}
+
+.calendar_fluid .calendar_n_readmore {
+    position: absolute;
+    bottom: 93px;
+    right: 5%;
+
+      a {
+        font-size: 18px;
+      }
 }
 
 
@@ -413,8 +599,17 @@
     flex: 0 0 50%;
     margin-bottom: 30px;
 }
+.gif_container .gif_box2{
+    flex: 0 0 50%;
+    margin-bottom: 30px;
+}
 
 .gif_container .gif_box:nth-child(5) {
+ 
+    top: 100%;
+
+}
+.gif_container .gif_box2:nth-child(5) {
  
     top: 100%;
 
@@ -427,6 +622,12 @@
     width: unset !important;
 }
 .gif_box {
+    position: unset !important;
+}
+.gif_container .gif_box2:nth-child(1) {
+    width: unset !important;
+}
+.gif_box2 {
     position: unset !important;
 }
 
@@ -458,6 +659,29 @@
     padding-right: 55px;
 
 
+}
+.tour_calendar_fluid .tour_calendar_n_readmore {
+   
+    top: 83%;
+    
+}
+
+.map_content_container .map_nd_content {
+   
+    padding: 5px 10px 5px 10px;
+    
+}
+.about_nature_info_box {
+    padding: 10px 10px 20px;
+
+}
+
+ .events_calendar_fluid .event_calendar_container > .row {
+     flex-direction: unset !important; 
+}
+
+ .events_calendar_fluid  .event_nd_calendar {
+    flex-direction: column-reverse;
 }
 
 .main_top_container .top_langugage_menu_box {
@@ -777,16 +1001,48 @@
     
     top:-7px;
 }
+.adjara_track_box {
+   
+    height: 200px;
+}
 
+.adjara_track_img_row .col-lg-3 {
+
+    margin-bottom: 15px;
+}
+.adjara_track_img_row .col-lg-9 {
+
+    margin-bottom: 25px;
+}
 }
 
 
 
 @media only screen and (max-width: 768px){
 
+    .home_video_container .home_video_wrapper {
+    flex-direction: column;
+    align-items: center;
+}
+.home_video_box {
+    width: 90%;
+    margin-bottom: 10px;
+}
+
 .en_menu_fluid .en_menu_container > div {
     flex: 0 0 53%;
     margin-bottom: 20px;
 }
+
+  .plan_nd_img_box_container_wrapper {
+            width: 95%;
+        }
+
+        .plan_nd_video_box_container_wrapper {
+            width: 95%;
+            
+        }
+
+
     
 }

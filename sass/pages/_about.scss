@@ -286,6 +286,33 @@
 	 width: 100%;
      background: #FCF9F9;
          padding-bottom: 130px;
+         position: relative;
+         overflow: hidden;
+
+         .calendar_n_readmore {
+         	 position: absolute;
+         	 bottom: 50px;
+			right: 5%;
+
+			 a {
+			 	color: #AAAAAA;
+			 	font-size: 30px;
+			 	font-family: 'Conv_bebas-neue-regular';
+				position: relative;
+
+				&:after{
+					  position: absolute;
+				    width: 500px;
+				    height: 2px;
+				    content: "";
+				    background-color: #AAAAAA;
+				    z-index: 1;
+				    top: 100%;
+				    left: 0;
+				}
+
+			 }
+         }
 
 
 		.calendar_container {
@@ -715,6 +742,28 @@
     justify-content: space-around;
     align-items: center;
     width: 100%;
+    overflow: hidden;
+
+    .tou_cl_info_tittle {
+
+    	    color: #4E4D51;
+		    font-family: 'Conv_bebas-neue-regular';
+		    font-size: 23px;
+		    margin-top: 10%;
+		    padding: 0 70px;
+		    text-align: center;
+
+    }
+
+    .tour_cn_wrapper {
+    	display: flex;
+    	align-items: center;
+    	justify-content: center;
+    }
+
+
+
+
 }
 
 .owl-item:nth-child(4n) .tour_content {
@@ -756,6 +805,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-direction: column;
 }
 
 
@@ -779,12 +829,29 @@
 
  .tour_bottom {
  	display: flex;
- 	justify-content: space-around;
- 	width: 100%;
+    justify-content: space-between;
+    width: 90%;
 
  	  span {
- 	  	 font-family: 'Conv_bebas-neue-regular';
+ 	  	font-family: 'Conv_bebas-neue-regular';
  	  	color: #4E4D51;
+  	  	cursor: pointer;
+
+
+ 	  	 &:last-child{
+ 	  	 	position:relative;
+
+ 	  	 	 &:after{
+ 	  	 	 	position:absolute;
+ 	  	 	 	width: 100px;
+ 	  	 	 	height: 1px;
+ 	  	 	 	content: "";
+ 	  	 	 	background-color: #6D6767;
+ 	  	 	 	z-index: 1;
+ 	  	 	 	top: 100%;
+ 	  	 	 	left: 0;
+ 	  	 	 }
+ 	  	 }
  	  }
  }  
 

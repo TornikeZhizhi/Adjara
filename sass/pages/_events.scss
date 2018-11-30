@@ -182,7 +182,33 @@
 	background-repeat: no-repeat;
 	padding: 30px 0 200px;
 	overflow: hidden;
-	position: relative;
+	position: relative; 
+
+	.tour_calendar_n_readmore {
+		position: absolute;
+	    top: 55%;
+	    right: 5%;
+	    z-index: 100;
+
+		  a {
+		  	font-family: 'Conv_bebas-neue-regular';
+    		color: #fff;
+    		font-size: 30px;
+
+    		 &:after {
+    		 	    position: absolute;
+				    width: 500px;
+				    height: 2px;
+				    content: "";
+				    background-color: #fff;
+				    z-index: 1;
+				    top: 100%;
+				    left: 0;
+    		 }
+		  }
+	}
+
+
 		
 
 		.calendar_mountain {
@@ -300,6 +326,7 @@
 	 	width: 120px;
 	 	color: #fff;
 	 	font-family: 'Conv_BPG_Glaho';
+	 	margin-bottom: 10px;
 
 	 	 img {
 	 	 	    width: 20px;
@@ -415,7 +442,7 @@
 }
 
 .event_nd_filter {
-	margin-bottom: 30%;
+	margin-bottom: 7%;
 }
 
 }
@@ -423,9 +450,10 @@
 
 .event_nd_col {
 
+
 	display: flex;
-	align-items: center;
-	justify-content: flex-end;
+    align-items: flex-start;
+    justify-content: flex-end;
 }
 
 
@@ -626,6 +654,20 @@
     width: 100%;
     position: relative;
     padding: 0;
+     .main_top_container .welcome_tittle span {
+	 
+	    color: #fff;
+	 
+	}
+
+	.main_top_container .top_right_content .top_host_box span {
+	 
+	    color: #fff;
+
+	    &:after{
+	    	background-color:#fff;
+	    }
+	}
 
 }
 
@@ -967,5 +1009,147 @@ img {
 }
 
 }
+
+
+
+.events_calendar_fluid {
+	width: 100%;
+	padding: 0;
+
+.tour_calendar_fluid {
+
+    padding: 165px 0 200px;
+   }
+	.main_top_container .welcome_tittle span {
+  
+    color: #fff;
+    
+	}
+
+	.main_top_container .top_right_content .top_host_box span {
+    color: #fff;
+  &:after{
+  	background-color:#fff;
+  }
+}
+
+.event_nd_calendar {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+}
+
+.event_bn_box {
+    padding: 20px 20px 25px 30px;
+ 
+}
+
+}
+
+
+.tour_nd_calendar_fluid {
+	position: relative;
+	width: 100%;
+    padding: 0;
+.header_navbar_fluid {
+    background-color: #19CBC5;
+    width: 100%;
+    height: 150px;
+}
+
+.main_top_container .welcome_tittle span {
+   
+    color: #fff;
+
+}
+
+.main_top_container .top_right_content .top_host_box span {
+   
+    color: #fff;
+
+    &:after{
+    	background-color:#fff;
+    }
+ 
+}
+  
+}
+
+
+.tour_calendar_nd_container {
+
+	.col-lg-3 {
+		padding-right: 4px;
+		padding-left: 4px;
+		margin-bottom: 5px;
+	}
+
+	.tour_content .tou_cl_info_tittle {
+    padding: 0px 35px;
+
+    h3 {
+	font-size: 20px;
+
+    }
+
+  
+}
+
+
+    .col-lg-3:nth-child(4n +1) .tour_content {
+        background-color: #CDDAAE;
+ 
+	}
+	 .col-lg-3:nth-child(4n +2) .tour_content {
+        background-color: #F7E9E9;
+ 
+	}
+	 .col-lg-3:nth-child(4n +3) .tour_content {
+        background-color: #AFE1EF;
+   
+	}
+	 .col-lg-3:nth-child(4n +4) .tour_content {
+       background-color: #DCDBDB;
+    
+	}
+	
+
+
+}
+
+
+.calendar_slider_contanct {
+  
+    border-bottom: none !important;
+    padding-bottom: 20px !important;
+  
+}
+
+.calendar_slider_link {
+	padding: 0px 0 !important;
+    border: none !important; 
+    align-items: center;
+    margin-left: 10px;
+
+}
+
+.calendar_modal_logo_link {
+	display: flex;
+	margin-top: 30px;
+}
+
+.calendar_left_up {
+	    border-bottom: 1px solid #999999 !important;
+}
+
+.calendar_left_down {
+    
+    border-top: unset !important;
+}
+
+.calendar_slider_text {
+	padding-bottom: 37px !important;
+}	
 
 

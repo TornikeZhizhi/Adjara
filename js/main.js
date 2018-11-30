@@ -519,6 +519,28 @@ $(document).ready(function(){
             // $(this).find("img").attr("src","gif/tour_gif"+ index +".gif");
         })
      })
+
+
+       $(".gif_box2").each(function(index){
+        $(this).on("mouseenter",function(){
+            var leng = $(".gif_box2").length 
+            for (var i = 0; i < leng; i++) {
+             $(".gif_box2").eq(i).find("img").attr("src","images/tour"+ i +".png") 
+            }
+            $(this).find("img").attr("src","gif/tour_gif"+ index +".gif");
+        })
+   })
+
+
+     $(".gif_box2").each(function(index){
+        $(this).on("mouseleave",function(){
+            var leng = $(".gif_box2").length 
+            for (var i = 0; i < leng; i++) {
+             $(".gif_box2").eq(i).find("img").attr("src","images/tour"+ i +".png") 
+            }
+            // $(this).find("img").attr("src","gif/tour_gif"+ index +".gif");
+        })
+     })
 })
 
 
@@ -787,6 +809,7 @@ $(document).ready(function(){
 
 
 // Gif Fluid Link
+
 
 
 })
