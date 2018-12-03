@@ -205,6 +205,82 @@
 
 @media only screen and (max-width: 992px){
 
+    .footer_logo {
+        display: none;
+    }
+
+    .footer_main_info_wrapper {
+    padding: 20px 15px 40px;
+    flex-direction: column;
+}
+
+.post_hover_content .post_hover_content_child {
+    padding: 0 15px;
+}
+
+.post_hover_content a {
+    font-size: 17px;
+    margin-top: 30px;
+    padding: 1px 40px 2px 30px;
+    background-position: 76px 10px,center
+}
+
+.footer_fluid .footer_about_text {
+    height: 130px;
+    margin-bottom: 15px;
+}
+
+.footer_main_info_wrapper>div {
+    width: 100% !important;
+    margin: 0 auto;
+}
+.footer_nd_menu {
+    margin-right: 0; 
+    margin-top: 0px;
+    align-self: flex-start;
+    padding-left: 17px;
+}
+.footer_menu_content {
+
+    margin-top: 25px;
+}
+.footer_fluid:after {
+    content: unset;
+}
+
+.footer_nav {
+        align-self: flex-start;
+        padding-left: 17px;
+}
+
+    .event_bn_tittle span {
+ 
+   font-size: 25px;
+ 
+}
+.our_event_text {
+ 
+    padding: 10px 0;
+}
+.our_event_text p {
+   
+     font-size: 12px;
+}
+
+
+    .event_bn_box {
+        padding: 10px 10px 10px 10px;
+    }
+    .event_bn_box .event_bn_text_wrapper h4 {
+    font-size: 21px;
+
+}
+
+.event_bn_links span {
+   
+    font-size: 11px;
+}
+
     .plan_slider_left_up {
         padding: 10px;
     }
