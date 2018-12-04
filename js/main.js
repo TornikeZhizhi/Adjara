@@ -707,7 +707,7 @@ $('.plan_culture_content_container').owlCarousel({
 
 $(document).ready(function(){
 
-$(".adjara_map div").on("click",function(){
+$(".adjara_map div").on("mouseenter",function(){
 
   $(".adjara_map div").find("h3").removeClass("active");
   $(this).find("h3").addClass("active");
@@ -717,6 +717,10 @@ $(".adjara_map div").on("click",function(){
 
 })
 
+
+$(".adjara_map div").on("click",function(){
+   window.location.href = "location_nd.html"
+})
 
 })
 
@@ -804,6 +808,22 @@ $(document).ready(function(){
     window.location.href = "plan.html"
   })
   $(".gif_container .gif_box").eq(4).click(function(){
+    window.location.href = "plan_nd_info.html"
+  })
+
+  $(".gif_container .gif_box2").eq(0).click(function(){
+    window.location.href = "plan_nd_go.html"
+  })
+  $(".gif_container .gif_box2").eq(1).click(function(){
+    window.location.href = "plan_housed.html"
+  })
+  $(".gif_container .gif_box2").eq(2).click(function(){
+    window.location.href = "plan_nd2.html"
+  })
+  $(".gif_container .gif_box2").eq(3).click(function(){
+    window.location.href = "plan.html"
+  })
+  $(".gif_container .gif_box2").eq(4).click(function(){
     window.location.href = "plan_nd_info.html"
   })
 

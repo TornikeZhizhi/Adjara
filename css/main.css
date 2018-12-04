@@ -1415,7 +1415,7 @@ a:hover {
   .about_use_text p, .about_use_text span {
     font-size: 14px !important;
     color: #4D4D4D;
-    font-family: 'Conv_bpg_web'; }
+    font-family: 'Conv_BPG_Glaho'; }
 
 .abous_us_tittle {
   text-align: center;
@@ -2094,6 +2094,23 @@ a:hover {
 .main_about_fluid .main_top_container .top_right_content .top_host_box span:first-child:after {
   background-color: #fff; }
 
+.more_question_fluid {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .more_question_fluid a {
+    padding: 19px 15px;
+    border: 2px solid #19CBC5;
+    background-color: #fff;
+    transition: .4s;
+    font-family: 'Conv_BPG_Glaho';
+    color: #19CBC5;
+    border-radius: 50px;
+    margin-bottom: 100px; }
+    .more_question_fluid a:hover {
+      background-color: #19CBC5;
+      color: #fff; }
+
 .events_about_fluid {
   position: relative;
   height: 100vh;
@@ -2706,8 +2723,6 @@ a:hover {
 
 .map_nd_text {
   margin-top: 60px;
-  overflow-y: scroll;
-  height: 100px;
   padding-right: 10px; }
   .map_nd_text::-webkit-scrollbar {
     width: 1px; }
