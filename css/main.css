@@ -2576,6 +2576,15 @@ a:hover {
       color: #19CBC5; }
   .adjara_map .batumi_gv {
     position: absolute;
+    bottom: 42%;
+    left: -4%;
+    z-index: 10;
+    display: flex;
+    align-items: center; }
+    .adjara_map .batumi_gv h3 {
+      margin-right: 15px; }
+  .adjara_map .xelvachauri_gv {
+    position: absolute;
     bottom: 27%;
     left: 9%;
     z-index: 10; }
@@ -2647,7 +2656,7 @@ a:hover {
     border-radius: 45px;
     padding: 1px 48px 2px 36px;
     background-repeat: no-repeat;
-    background-position: 100px 15px,center;
+    background-position: 112px 15px,center;
     position: relative; }
     .adjara_map_content a:after {
       position: absolute;
@@ -2671,14 +2680,18 @@ a:hover {
   margin-bottom: 80px; }
 
 .map_content_container {
-  max-width: 1200px; }
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex; }
+  .map_content_container > div {
+    flex: 0 0 20%; }
   .map_content_container .map_nd_content {
     text-align: center;
     padding: 45px 25px 50px 25px;
     border-right: 1px dashed #DBDADA; }
     .map_content_container .map_nd_content img {
-      width: 130px;
-      height: 120px;
+      max-width: 130px;
+      max-height: 120px;
       object-fit: contain; }
     .map_content_container .map_nd_content h3 {
       color: #999999;
@@ -2694,9 +2707,16 @@ a:hover {
 .map_nd_text {
   margin-top: 60px;
   overflow-y: scroll;
-  height: 100px; }
+  height: 100px;
+  padding-right: 10px; }
   .map_nd_text::-webkit-scrollbar {
-    width: 2px; }
+    width: 1px; }
+
+.mad_nd_hj {
+  height: 185px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; }
 
 .plan_nd_img_box_container {
   max-width: 1200px;
@@ -2843,6 +2863,61 @@ a:hover {
 
 .calendar_slider_text {
   padding-bottom: 37px !important; }
+
+.map_content_container .map_nd_content:first-child img {
+  margin-top: 40px; }
+
+.location_nature_fluid .nature_container {
+  padding-bottom: 100px; }
+
+.location_nature_tab {
+  margin: 30px 0; }
+  .location_nature_tab select {
+    color: #19CBC5;
+    font-family: 'Conv_BPG_Glaho';
+    font-size: 17px;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 240px;
+    border-bottom: 3px solid #19CBC5;
+    padding: 2px 10px;
+    cursor: pointer; }
+
+.location_nd_fluid {
+  background-color: #F7F7F7;
+  padding-bottom: 100px; }
+
+.location_nd_lg_text {
+  text-align: center; }
+  .location_nd_lg_text h3 {
+    color: #999999;
+    font-size: 30px;
+    font-family: 'Conv_bebas-neue-regular'; }
+  .location_nd_lg_text .location_nd_lg_info {
+    margin-top: 20px;
+    height: 200px;
+    overflow-y: scroll; }
+    .location_nd_lg_text .location_nd_lg_info::-webkit-scrollbar {
+      width: 1px; }
+    .location_nd_lg_text .location_nd_lg_info p {
+      font-family: 'Conv_BPG_Glaho';
+      font-size: 12px;
+      color: #999999;
+      text-align: justify; }
+
+.location_nd_img_video_fluid .plan_nd_img_box_container_vertical {
+  display: none; }
+
+.location_nd_img_video_fluid {
+  background-color: #F7F7F7; }
+  .location_nd_img_video_fluid .event_nd_gallery_box_fluid:after {
+    content: unset; }
+  .location_nd_img_video_fluid .plan_nd_img_box_container .owl-prev, .location_nd_img_video_fluid .plan_nd_video_box_container .owl-prev {
+    border-right: 20px solid #19CBC5 !important; }
+  .location_nd_img_video_fluid .plan_nd_img_box_container .owl-next, .location_nd_img_video_fluid .plan_nd_video_box_container .owl-next {
+    border-left: 20px solid #19CBC5 !important; }
+
+.location_nd_nature {
+  padding-bottom: 100px; }
 
 .plan_fluid {
   width: 100%;
@@ -3740,6 +3815,66 @@ a:hover {
     bottom: 250px; } }
 /*//992................................................................................*/
 @media only screen and (max-width: 992px) {
+  .location_nd_fluid {
+    padding-bottom: 35px; }
+
+  .location_nd_nature {
+    padding-bottom: 30px; }
+
+  .location_nd_lg_text {
+    margin-top: 20px; }
+
+  .adjara_map_container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0 65px; }
+
+  .map_content_container > div {
+    flex: unset;
+    max-width: 500px;
+    width: 90%;
+    margin-bottom: 20px; }
+
+  .adjara_map {
+    margin-bottom: 30px; }
+
+  .location_nd_lg_map img {
+    width: 200px; }
+
+  .location_nd_img_video_fluid {
+    overflow-y: hidden; }
+
+  .map_content_container {
+    flex-wrap: wrap;
+    justify-content: space-around; }
+
+  .location_nd_lg_map {
+    text-align: center; }
+
+  .destination_main_wrapper {
+    background-color: #F7F7F7;
+    margin-bottom: 15px; }
+
+  .adjara_map img {
+    width: 295px; }
+
+  .adjara_map div img {
+    width: 12px; }
+
+  .adjara_map h3 {
+    font-size: 12px; }
+
+  .adjara_map .batumi_gv h3 {
+    margin-right: 2px; }
+
+  .adjara_map_content p {
+    font-size: 12px; }
+
+  .adjara_map_content {
+    padding: 25px 20px;
+    max-width: 350px;
+    width: 95%; }
+
   .footer_logo {
     display: none; }
 
@@ -3763,6 +3898,9 @@ a:hover {
   .footer_main_info_wrapper > div {
     width: 100% !important;
     margin: 0 auto; }
+
+  .footer_contacts .footer_contact_tittle {
+    margin-top: 15px; }
 
   .footer_nd_menu {
     margin-right: 0;
@@ -4110,7 +4248,7 @@ a:hover {
   .main_top_container .welcome_tittle {
     justify-content: flex-start;
     margin-left: 7px;
-    padding-right: 55px; }
+    padding-right: 52px; }
 
   .tour_calendar_fluid .tour_calendar_n_readmore {
     top: 83%; }
@@ -4388,7 +4526,7 @@ a:hover {
     align-items: center; }
 
   .home_video_box {
-    width: 90%;
+    width: 80%;
     margin-bottom: 10px; }
 
   .en_menu_fluid .en_menu_container > div {
@@ -4396,9 +4534,9 @@ a:hover {
     margin-bottom: 20px; }
 
   .plan_nd_img_box_container_wrapper {
-    width: 95%; }
+    width: 80%; }
 
   .plan_nd_video_box_container_wrapper {
-    width: 95%; } }
+    width: 80%; } }
 
 /*# sourceMappingURL=main.css.map */
